@@ -11,10 +11,11 @@
             <img src="img/index-logo.svg" alt="Логотип сайта «Техномаркт»">
             <ul class="main-navigation-bar">
                 <li><Form>
+                    <img src="img/icon-search.svg" alt="Поиск">
                     <input type="search" name="q" placeholder="Поиск">
                 </Form></li>
-                <li><a href="#">Закладки</a></li>
-                <li><a href="#">Корзина</a></li>
+                <li><img src="img/icon-bookmark.svg" alt="Закладки"><a href="#">Закладки</a></li>
+                <li><img src="img/cart-icon.svg" alt="Корзина"><a href="#">Корзина</a></li>
             </ul>
             <ul class="buy-navigation">
                 <li><a href="#">Оформить заказ</a></li>
@@ -22,10 +23,10 @@
         </nav>
         <div class="main-header-down">
             <p class="site-info">Интернет-магазин строительных материалов и инструмента для ремонта</p>
-            <p class="site-tel"><a href="tel:+78125550555">+7(812) 555-05-55</a></p>
+            <p class="site-tel"><img src="img/icon-phone.svg" alt="Телефон"><a href="tel:+78125550555">+7(812) 555-05-55</a></p>
             <p class="site-adres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <ul class="enter-navigation">
-                <li><a href="#">Войти</a></li>
+                <li><img src="img/icon-login.svg" alt="Вход"><a href="#">Войти</a></li>
                 <li><a href="#">Регистрация</a></li>
             </ul>
             <nav class="site-navigation">
@@ -46,36 +47,67 @@
         <section class="catalog">
             <h2 class="visually-hidden">Каталог</h2>
             <ul class="catalog-list">
-                <li class="catalog-list-materials">Материалы</li>
-                <li class="catalog-list-tools">Инструменты</li>
-                <li class="catalog-list-engineering">Техника</li>
-                <li class="catalog-list-discounts">Скидки 50%</li>
-                <li class="catalog-list-delivery">Доставка</li>
+                <li class="catalog-list-materials">
+                    Материалы
+                    <img src="img/icon-1.svg" alt="Материалы">
+                    <img src="img/new flag.png" alt="Новинка">
+                    <a href="#">НА ЛЮБОЙ ВКУС</a>
+                </li>
+                <li class="catalog-list-tools">
+                    Инструменты
+                    <img src="img/icon-2.svg" alt="Инструменты">
+                    <a href="#">НА ВСЕ СЛУЧАИ</a>
+                </li>
+                <li class="catalog-list-engineering">
+                    Техника
+                    <img src="img/icon-3.svg" alt="Техника">
+                    <a href="#">ДЛЯ СТРОЙКИ</a>
+                </li>
+                <li class="catalog-list-discounts">
+                    Скидки 50%
+                    <img src="img/icon-4.svg" alt="Скидки 50%">
+                    <a href="#">НА 350 ТОВАРОВ</a>
+                </li>
+                <li class="catalog-list-delivery">
+                    Доставка
+                    <img src="img/icon-5.svg" alt="Доставка">
+                    <a href="#">БЕСПЛАТНО</a>
+                </li>
             </ul>
             <ul class="catalog-tools">
-                <li class="catalog-tools-drill">Дрели</li>
+                <li class="catalog-tools-drill">
+                    Дрели
+                    <img src="img/slider 2.jpg" alt="Дрели">
+                    <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
+                </li>
+                <li class="catalog-tools-perforators">
+                    Перфораторы
+                    <img src="img/slider 1.jpg" alt="Перфораторы">
+                    <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
+                </li>
             </ul>
         </section>
         <section class="popular-goods">
             <h2 class="visually-hidden">Популярные товары</h2>
             <p class="popular-goods-link">ПОПУЛЯРНЫЕ ТОВАРЫ: <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a></p>
             <ul class="popular-goods-list">
-                <li><img src="img/" alt="BOSCH BFG 9000">
+                <li><img src="img/item-1.jpg" alt="BOSCH BFG 9000">
                     <h3 class="goods-name">Перфоратор BOSCH BFG 9000</h3>
                     <p class="old-price">32500 Р.</p>
                     <p class="new-price">25500 Р.</p>
                 </li>
-                <li><img src="img/" alt="BOSCH BFG 3000">
+                <li><img src="img/item-2.jpg" alt="BOSCH BFG 3000">
                     <h3 class="goods-name">Перфоратор BOSCH BFG 3000</h3>
                     <p class="old-price">22500 Р.</p>
                     <p class="new-price">15500 Р.</p>
                 </li>
-                <li><img src="img/" alt="BOSCH BFG 6000">
+                <li><img src="img/item-3.jpg" alt="BOSCH BFG 6000">
                     <h3 class="goods-name">Перфоратор BOSCH BFG 6000</h3>
                     <p class="old-price">30500 Р.</p>
                     <p class="new-price">25500 Р.</p>
                 </li>
-                <li><img src="img/" alt="BOSCH BFG 2000">
+                <li><img src="img/item-2.jpg" alt="BOSCH BFG 2000">
+                    <img src="img/new flag.png" alt="Новинка">
                     <h3 class="goods-name">Перфоратор BOSCH BFG 2000</h3>
                     <p class="old-price"></p>
                     <p class="new-price">12500 Р.</p>
@@ -86,14 +118,14 @@
             <h2 class="visually-hidden">Популярные производители</h2>
             <p class="popular-brands-link">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ: <a href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a></p>
             <ul class="popular-brands-list">
-                <li class="brands-icon"><img src="img/" alt="BOSCH"></li>
-                <li class="brands-icon"><img src="img/" alt="Makita"></li>
-                <li class="brands-icon"><img src="img/" alt="DeWALT"></li>
-                <li class="brands-icon"><img src="img/" alt="Интерскол"></li>
-                <li class="brands-icon"><img src="img/" alt="HITACHI"></li>
-                <li class="brands-icon"><img src="img/" alt="LG"></li>
-                <li class="brands-icon"><img src="img/" alt="AEG"></li>
-                <li class="brands-icon"><img src="img/" alt="Metabo"></li>
+                <li class="brands-icon"><img src="img/bosch.jpg" alt="BOSCH"></li>
+                <li class="brands-icon"><img src="img/Makita.jpg" alt="Makita"></li>
+                <li class="brands-icon"><img src="img/DeWALT.jpg" alt="DeWALT"></li>
+                <li class="brands-icon"><img src="img/Интерскол.jpg" alt="Интерскол"></li>
+                <li class="brands-icon"><img src="img/Hitachi.jpg" alt="HITACHI"></li>
+                <li class="brands-icon"><img src="img/LG.jpg" alt="LG"></li>
+                <li class="brands-icon"><img src="img/AEG.jpg" alt="AEG"></li>
+                <li class="brands-icon"><img src="img/Metabo.jpg" alt="Metabo"></li>
             </ul>
         </section>
         <section class="services">
@@ -101,9 +133,30 @@
             <p>Хороший интернет-магазин отличается от плохого не только ценами! <br>
             Мы стараемся изо всех сил, что бы сделать ваши покупки приятными</p>
                 <ul class="services-list">
-                    <li class="services-list-item"><a href=""></a></li>
-                    <li class="services-list-item"><a href=""></a></li>
-                    <li class="services-list-item"><a href=""></a></li>
+                    <li class="services-list-item-delivery">
+                        <h3>ДОСТАВКА</h3>
+                        <p>Мы с удовольствием доставим ваш товар прямо<br> 
+                            к вашему подъезду совершенно бесплатно! <br>
+                            Ведь мы неплохо заработаем, <br>
+                            поднимая его на ваш этаж!</p>
+                        <img src="img/Layer delivery.jpg" alt="Доставка">
+                    </li>
+                    <li class="services-list-item-guarantee">
+                        <h3>ГАРАНТИЯ</h3>
+                        <p>Если купленный у нас товар поломается или заискрит, <br>
+                            а также в случае пожара, спровоцированного его возгаранием, <br>
+                            вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br>
+                            сгоревший товар на новый. <br>
+                            Дом уж восстановите как-нибудь сами.</p>
+                            <img src="img/Layer guaranty.jpg" alt="Гарантия">
+                    </li>
+                    <li class="services-list-item-credit">
+                        <h3>КРЕДИТ</h3>
+                        <p>Залезть в долговую яму стало проще! <br>
+                            Кредитные консультанты придут вам на помощь.</p>
+                        <a href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+                        <img src="img/Layer credit.jpg" alt="Кредит">
+                    </li>
                 </ul>
         </section>
         <section class="company-info">
@@ -123,6 +176,7 @@
             <p>Вы можете забрать товар сами, <br>
             заехав в наш офис:</p>
             <map name="adress-store"></map>
+            <img src="img/Слой 5.jpg" alt="Карта">
             <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
         </section>
     </main>
@@ -151,9 +205,24 @@
             <p>© 2010-2017 Компания «Техномарт» <br>
             Все права защищены</p>
             <ul>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
+                <li>
+                    <a class="social-button" href="#">
+                    <img src="img/vk-icon.svg" alt="Вконтакте">
+                    <span class="visually-hidden">Вконтакте</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">
+                    <img src="img/fb-icon.svg" alt="Фейсбук">
+                    <span class="visually-hidden">Фейсбук</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">
+                    <img src="img/insta-icon.svg" alt="Инстаграм">
+                    <span class="visually-hidden">Инстаграм</span>
+                    </a>
+                </li>
             </ul>
             <p>Обратная связь: <br>
             <a href="https://mail.@htmlacademy.ru">mail.@htmlacademy.ru</a></p>
