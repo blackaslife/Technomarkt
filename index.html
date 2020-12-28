@@ -86,6 +86,10 @@
                     <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
                 </li>
             </ul>
+            <button class="catalog-tools-btn"><img src="img/icon-left.svg" alt="Previous"></button>
+            <button class="catalog-tools-btn"><img src="img/icon-right.svg" alt="Next"></button>
+            <button class="catalog-tools-slider"><img src="img/slider dots copy 2.png" alt=""></button>
+            <button class="catalog-tools-slider"><img src="img/slider dots copy.png" alt=""></button>
         </section>
         <section class="popular-goods">
             <h2 class="visually-hidden">Популярные товары</h2>
@@ -179,6 +183,31 @@
             <img src="img/Слой 5.jpg" alt="Карта">
             <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
         </section>
+        <section class="modal modal-map">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+            <p>
+                <img src="img/map.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" height="446" width="940">
+            </p>
+            <button class="modal-close" type="button"><img src="img/map-close.svg" alt="Close"></button>
+        </section>
+        <section class="modal modal-contact">
+            <form action="https://echo.htmlacademy.ru" method="POST">
+                <p class="modal-contact-appointment">
+                    <label for="appointment-name">Ваше имя:</label>
+                    <input type="text" id="appointment-name" name="name" value="" placeholder="Представьтесь, пожалуйста">
+                </p>
+                <p class="modal-contact-appointment">
+                    <label for="appointment-email">Ваш e-mail:</label>
+                    <input id="appointment-email" type="email" name="email" id="" value="" placeholder="Для отправки ответа">
+                </p>
+                <p class="modal-contact-appointment">
+                    <label for="appointment-text">Текст письма</label>
+                    <input type="text" id="appointment-text" name="text" value="" placeholder="В свободной форме">
+                </p>
+                <button class="modal-btn" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button"><img src="img/map-close.svg" alt="Close"></button>
+        </section>
     </main>
     <footer class="main-footer">
         <div class="main-footer-top">
@@ -230,16 +259,7 @@
             <a href="https://htmlacademy.ru"></a></p>
         </div>
     </footer>
-    <section class="modal modal-contact-us">
-        <p>Ваше имя:</p>
-        <p>Ваш e-mail:</p>
-        <p>Текст письма</p>
-        <!--Здесь будет форма-->
-        <span class="modal-close">x</span>
-    </section>
-    <section class="modal modal-map">
-        <!--Здесь будет форма-->
-        <span class="modal-close">x</span>
-    </section>
+    
+   
 </body>
 </html>
