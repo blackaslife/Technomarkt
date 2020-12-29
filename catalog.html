@@ -61,25 +61,46 @@
     <section class="catalog-filter">
         <h2 class="visually-hidden">Фильтр каталога</h2>
         <p class="catalog-filter-name">ФИЛЬТР:</p>
-        <div class="catalog-filter-price">
-            <p class="catalog-filter-price-name">ЦЕНА:</p>
-        </div>
-        <div class="catalog-filter-brands">
-            <p class="catalog-filter-brands-name">ПРОИЗВОДИТЕЛИ:</p>
-            <ul class="catalog-filter-brands-list">
-                <li>BOSCH</li>
-                <li>ИНТЕРСКОЛ</li>
-                <li>MAKITA</li>
-                <li>DEWALT</li>
-                <li>HITACHI</li>
-            </ul>
-        </div>
-        <div class="catalog-filter-power-supply">
-            <p class="catalog-filter-power-suply-name">ПИТАНИЕ:</p>
-            <p class="catalog-filter-power-suply-opcion"><input type="#">АККУМУЛЯТОРНЫЕ</p>
-            <p class="catalog-filter-power-suply-opcion"><input type="#">СЕТЕВЫЕ</p>
-        </div>
-        <button>ПОКАЗАТЬ</button>
+        <form action="htttps://echo.htmlacademy.ru" method="get">
+            <fieldset>
+                <!--Закончить форму-->
+                <legend>ЦЕНА:</legend>
+                <input type="range" name="price" id="">
+                <label for=""><input type="text" value="0"></label>
+                <span>-</span>
+                <label for=""><input type="text" value="30000"></label>
+            </fieldset>
+            <fieldset>
+                <legend>ПРОИЗВОДИТЕЛИ:</legend>
+                <ul class="catalog-filter-brands-list">
+                    <li><input type="checkbox" name="BOSCH" id="catalog-filter-brands-bosch">
+                        <label for="catalog-filter-brands-bosch">BOSCH</label>
+                    </li>
+                    <li><input type="checkbox" name="ИНТЕРСКОЛ" id="catalog-filter-brands-интерскол">
+                        <label for="catalog-filter-brands-интерскол">ИНТЕРСКОЛ</label>
+                    </li>
+                    <li><input type="checkbox" name="MAKITA" id="catalog-filter-brands-makita">
+                        <label for="catalog-filter-brands-makita">MAKITA</label>
+                    </li>
+                    <li><input type="checkbox" name="DEWALT" id="catalog-filter-brands-dewalt">
+                        <label for="catalog-filter-brands-dewalt">DEWALT</label>
+                    </li>
+                    <li><input type="checkbox" name="HITACHI" id="catalog-filter-brands-hitachi">
+                        <label for="catalog-filter-brands-hitachi">HITACHI</label>
+                    </li>
+                </ul>    
+            </fieldset>
+            <fieldset>
+                <legend>ПИТАНИЕ:</legend>
+                <ul class="catalog-filter-power-supply">
+                    <li><input type="radio" name="power-group" value="battery" id="catalog-filter-power-battery">
+                        <label for="catalog-filter-power-battery">АККУМУЛЯТОРНЫЕ</label></li>
+                    <li><input type="radio" name="power-group" value="network" id="catalog-filter-power-network">
+                        <label for="catalog-filter-power-network">СЕТЕВЫЕ</label></li>
+                </ul>    
+            </fieldset>
+            <button type="submit">ПОКАЗАТЬ</button>
+        </form>
     </section>
     <section class="catalog-items">
         <h2 class="visually-hidden">Товары каталога</h2>
@@ -147,7 +168,7 @@
                 <p class="catalog-items-good-new-price">12500 Р.</p>
             </li>
         </ul>
-    </section>
+    </section>  
     <nav class="catalog-items-goods-navigation">
         <ul>
             <li><a href="#">1</a></li>
@@ -156,6 +177,12 @@
             <li><a href="#">СЛЕДУЮЩАЯ</a></li>
         </ul>
     </nav>
+    <section class="modal modal-add-items">
+        <p><img src="img/add to.svg" alt="icon">Товар добавлен в корзину!</p>
+        <a href="https://echo.htmlacademy.ru">ОФОРМИТЬ ЗАКАЗ</a>
+        <button type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+        <button class="modal-close" type="button"><img src="img/map-close.svg" alt="Close"></button>
+    </section>
     <div class="catalog-items-info">
         <p>ПАРА СЛОВ О ПЕРФОРАТОРАХ</p>
         <p></p>
@@ -211,10 +238,6 @@
             <a href="https://htmlacademy.ru"></a></p>
         </div>
     </footer>
-    <section class="modal modal-add-items">
-        <p>Товар добавлен в корзину!</p>
-        <!--Здесь будет форма-->
-        <span class="modal-close">x</span>
-    </section>
+    
 </body>
 </html>
