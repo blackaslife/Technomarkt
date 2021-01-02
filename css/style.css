@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: normal;
+
+    background-color: #293449;
+}
+
+.main-navigation-bar,
+.buy-navigation {
+    list-style: none;
+}
+
+.main-navigation-logo a{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+
+    background-color: #ee3643;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: #b52933;
+}
+
+
+
+
+.main-navigation-bar a,
+.buy-navigation a{
+    color:#ffffff;
+}
+
+.main-navigation-bar a:hover{
+    background-color: #212a3a;
+}
+
+.main-navigation-logo a:hover{
+    background-color: #ca2c37;
+}
+
+.main-navigation-logo a:focus{
+    background-color: #ba2732;
+}
+.main-navigation-focus a:focus {
+    color: rgba(255,255,255,0.6);
+
+    background-color: #161d29;
+}
+
+.buy-navigation {
+    background-color: #63a63e;
+}
+
+.buy-navigation a:hover {
+    background-color: #5fbb2d;
+}
+
+.buy-navigation a:focus {
+    color: rgba(255,255,255,0.5);
+
+    background-color: #518534;
+}

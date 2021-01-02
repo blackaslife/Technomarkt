@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <img src="img/index-logo.svg" alt="Логотип сайта «Техномаркт»">
+            <!--<img src="img/index-logo.svg" alt="Логотип сайта «Техномаркт»">-->
             <ul class="main-navigation-bar">
-                <li><Form>
+                <li class="main-navigation-logo"><a href="#">ТЕХНОМАРТ</a></li>
+                <li class="main-navigation-search"><Form>
                     <img src="img/icon-search.svg" alt="Поиск">
                     <input type="search" name="q" placeholder="Поиск">
                 </Form></li>
-                <li><img src="img/icon-bookmark.svg" alt="Закладки"><a href="#">Закладки</a></li>
-                <li><img src="img/cart-icon.svg" alt="Корзина"><a href="#">Корзина</a></li>
-            </ul>
-            <ul class="buy-navigation">
-                <li><a href="#">Оформить заказ</a></li>
+                <li class="main-navigation-focus"><img src="img/icon-bookmark.svg" alt="Закладки"><a href="#">Закладки</a></li>
+                <li class="main-navigation-focus"><img src="img/cart-icon.svg" alt="Корзина"><a href="#">Корзина</a></li>
+                <li class="buy-navigation"><a href="#">Оформить заказ</a></li>
             </ul>
         </nav>
         <div class="main-header-down">
