@@ -11,6 +11,10 @@ body {
     background-color: #ffffff;
 }
 
+header {
+    background-color: #f3f7f9;
+}
+
 a {
     text-decoration: none;
 }
@@ -39,9 +43,6 @@ a {
     border-bottom-width: 5px;
     border-bottom-color: #b52933;
 }
-
-
-
 
 .main-navigation-bar a,
 .buy-navigation a{
@@ -77,4 +78,109 @@ a {
     color: rgba(255,255,255,0.5);
 
     background-color: #518534;
+}
+
+.main-header-down {
+    font-family: Cuprum, Arial, sans-serif;
+}
+
+.site-info {
+    font-style: italic;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 23px;
+    color: #ee3643;
+}
+
+.site-tel a {
+    color: #ee3643;
+}
+
+.site-tel  {
+    border: solid 3px;
+    border-color: #ffffff;
+}
+
+.site-adres {
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
+}
+
+.enter-navigation  a{
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.enter-navigation {
+    list-style: none;
+}
+
+.enter-navigation a:hover {
+    color: #ee3643;
+}
+
+.enter-navigation a:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-bar {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: normal;
+    
+    background-color: #32425c;
+    list-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: #293449;
+}
+
+.site-navigation-bar a {
+    color: #ffffff;
+}
+
+.site-navigation-bar :hover {
+    background-color: #293449;
+}
+
+.site-navigation-bar a:focus {
+    color: rgba(255, 255, 255, 0.5);
+
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: #1d2739;
+    background-color: #1d2739;
+}
+
+.enter-user {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.enter-options {
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425c;
+    text-decoration: underline;
+}
+
+.enter-options:hover {
+    color: #ee3643;
+}
+
+.enter-user:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.enter-options:focus {
+    color:rgba(50, 66, 92, 0.3)
 }
