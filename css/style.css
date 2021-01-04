@@ -11,12 +11,12 @@ body {
     background-color: #ffffff;
 }
 
-header {
-    background-color: #f3f7f9;
-}
-
 a {
     text-decoration: none;
+}
+
+header {
+    background-color: #f3f7f9;
 }
 
 .main-navigation {
@@ -183,4 +183,118 @@ a {
 
 .enter-options:focus {
     color:rgba(50, 66, 92, 0.3)
+}
+
+/*main*/
+
+.catalog-list {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+
+    list-style: none;
+}
+
+.catalog-list a {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+
+    background-color: #e5ac40;
+}
+
+.catalog-list-materials {
+    background-color: #ffbf47;
+}
+
+.catalog-list-tools {
+    background-color: #3bbce3;
+}
+
+.catalog-list-tools a {
+    background-color: #35a9cc;
+}
+
+.catalog-list-engineering {
+    background-color: #dc91d8;
+}
+
+.catalog-list-engineering a {
+    background-color: #c682c2;
+}
+
+.catalog-list-discounts {
+    background-color: #8ed78f;
+}
+
+.catalog-list-discounts a {
+    background-color: #80c180;
+}
+
+.catalog-list-delivery {
+    background-color: #ffc047;
+}
+
+.catalog-tools{
+    list-style: none;
+}
+
+.catalog-tools h3 {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+}
+
+.catalog-tools p {
+    line-height: 24px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.catalog-tools a {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+
+    background-color: #ee3643;
+}
+
+.catalog-tools-drill {
+    background-color: #685c53;
+    background-image: url("../img/slider 2.jpg");
+    background-repeat: no-repeat;
+
+}
+
+.catalog-tools-perforators {
+    background-color: #8f8985;
+    background-image: url("../img/slider 1.jpg");
+    background-repeat: no-repeat;
+}
+
+/*section class="popular-goods"*/
+
+.popular-goods-link {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #32425c;
+
+    background-color: #f9f5f0;
+}
+
+.popular-goods-link a {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+
+    background-color: #ee3643;
 }
