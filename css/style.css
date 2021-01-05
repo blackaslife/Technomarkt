@@ -298,3 +298,114 @@ header {
 
     background-color: #ee3643;
 }
+
+.popular-goods-list {
+    list-style: none;
+}
+/*cut img with out border*/
+.popular-goods-item {
+    width: 220px;
+    height: 318px;
+    text-align: center;
+    border: 1px solid lightgrey;
+}
+
+/*add btn instead img*/
+.popular-goods-item:hover {
+    box-shadow: 0 0 10px rgba(122,122,122,0.5);
+}
+
+.old-price {
+    font-size: 17px;
+    line-height: 18px;
+    text-decoration: line-through;
+    color: #a9a9a9;
+    text-align: center;
+}
+
+/*use gradient*/
+.new-price {
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+
+    background-color: #ee3643;
+	
+    text-align: center;
+}
+
+/*section popular-brands*/
+
+.popular-brands-link {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #32425c;
+
+    background-color: #f9f5f0;
+}
+
+.popular-brands-link a {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+
+    background-color: #ee3643;
+}
+
+.popular-brands-list {
+    list-style: none;
+}
+
+.brands-icon {
+    width: 220px;
+    height: 145px;
+    border: 1px solid lightgrey;
+    text-align: center;
+}
+
+.brands-icon:hover {
+    box-shadow: 0 0 10px rgba(122,122,122,0.5);
+}
+
+/*focus dont work*/
+.brand-icon:focus {
+    box-shadow: 0 0 5px rgba(122,122,122,0.5);
+}
+.brand-icon a img:focus {
+    filter: alpha(Opacity=30);
+    opacity: 0.3;
+}
+
+/*section services*/
+
+.services {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+
+    background-color: #f4f8f9;
+}
+
+.services-rendered {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.services-list {
+    list-style: none;
+}
+
+ .services-list-item h3{
+     font-family: Cuprum, Arial, sans-serif;
+     font-size: 36px;
+     line-height: 36px;
+     font-weight: normal;
+     color: #32425c;
+ }
