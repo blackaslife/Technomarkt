@@ -398,6 +398,29 @@ header {
     color: #000000;
 }
 
+.services-btn {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    color: #ffffff;
+
+    background-color: #32425c;
+    display: block;
+    border: none;
+    padding: 0;
+}
+
+.services-btn:hover {
+    background-color: #293449;
+}
+
+.services-btn:focus {
+    color: #32425c;
+
+    background-color: #ffffff;
+    outline: none;
+}
+
 .services-list {
     list-style: none;
 }
@@ -408,4 +431,14 @@ header {
      line-height: 36px;
      font-weight: normal;
      color: #32425c;
- }
+}
+
+.services-credit-send {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+
+    background-color: #ff5357;
+}
