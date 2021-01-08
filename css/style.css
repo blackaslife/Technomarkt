@@ -403,6 +403,7 @@ header {
     font-size: 21px;
     line-height: 30px;
     color: #ffffff;
+    
 
     background-color: #32425c;
     display: block;
@@ -441,4 +442,71 @@ header {
     color: #ffffff;
 
     background-color: #ff5357;
+}
+
+/*section company info*/
+
+.company-info h2 {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.company-info {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.delivery-company {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+   
+    list-style: none;
+}
+/*list-style-image inherit span*/
+.delivery-company span {
+    color: #ee3643;
+     padding-right: 7px;
+}
+
+.company-info a {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+
+    background-color: #ee3643;
+}
+
+.contacts {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.contacts h2 {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.contacts img {
+    width: 300px;
+    height: 158px;
+}
+
+.contacts button {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+
+    background-color: #ee3643;
+    border: none;
+    outline: none;
 }
