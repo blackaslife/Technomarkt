@@ -510,3 +510,83 @@ header {
     border: none;
     outline: none;
 }
+
+/*footer*/
+
+footer {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-footer-top {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #f3f7f9;
+
+    background-color: #32425c;
+}
+
+.main-footer-top ul {
+    list-style: none;
+}
+
+.footer-first-list-link {
+    color: #f3f7f9;
+}
+
+.footer-second-list-link {
+    color: #ffda96;
+}
+
+.footer-first-list-link:hover,
+.footer-second-list-link:hover {
+    text-decoration: underline;
+}
+
+.footer-first-list-link:focus, {
+    color: rgba(241, 245, 247, 0.5);
+}
+
+.footer-second-list-link:focus {
+    color: rgba(255, 209, 128, 0.5);
+}
+
+.main-navigation-logo {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #ffffff;
+
+    background-color: #ee3643;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: #b52933;
+}
+
+.main-footer-down {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+
+    background-color: #293449;
+}
+
+.main-footer-down ul {
+    list-style: none;
+}
+
+.main-footer-down a {
+    color: #ffda96;
+}
+
+.main-footer-down a:hover {
+    text-decoration: underline;
+}
+
+.main-footer-down a:focus {
+    color: #b52933;
+}
