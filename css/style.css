@@ -545,7 +545,7 @@ footer {
     text-decoration: underline;
 }
 
-.footer-first-list-link:focus, {
+.footer-first-list-link:focus {
     color: rgba(241, 245, 247, 0.5);
 }
 
@@ -590,3 +590,43 @@ footer {
 .main-footer-down a:focus {
     color: #b52933;
 }
+
+/*site catalog */
+
+.catalog-navigation-line {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    
+    list-style: none;
+}
+
+.catalog-navigation-line a {
+    color: #000000;
+}
+
+.catalog-name{
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #32425c;
+
+    background-color: #f2f6f8;
+}
+
+/* catalog filter */
+
+.filter-sorting {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.catalog-filter-name,
+.range-value {
+    background-color: #f7f3ec;
+}
+
+
+

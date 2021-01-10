@@ -64,15 +64,15 @@
     <p class="catalog-name">ПЕРФОРАТОРЫ</p>
     <section class="catalog-filter">
         <h2 class="visually-hidden">Фильтр каталога</h2>
-        <p class="catalog-filter-name">ФИЛЬТР:</p>
+        <p class="catalog-filter-name filter-sorting">ФИЛЬТР:</p>
         <form action="htttps://echo.htmlacademy.ru" method="get">
             <fieldset>
                 <!--Закончить форму-->
                 <legend>ЦЕНА:</legend>
-                <input type="range" name="price" id="">
-                <label for=""><input type="text" value="0"></label>
+                <p class="range-value"><input  type="range" name="price" id=""></p>
+                <label for=""><input class="range-value" type="text" value="0"></label>
                 <span>-</span>
-                <label for=""><input type="text" value="30000"></label>
+                <label for=""><input class="range-value" type="text" value="30000"></label>
             </fieldset>
             <fieldset>
                 <legend>ПРОИЗВОДИТЕЛИ:</legend>
@@ -103,17 +103,17 @@
                         <label for="catalog-filter-power-network">СЕТЕВЫЕ</label></li>
                 </ul>    
             </fieldset>
-            <button type="submit">ПОКАЗАТЬ</button>
+            <button class="filter-sorting" type="submit">ПОКАЗАТЬ</button>
         </form>
     </section>
     <section class="catalog-items">
         <h2 class="visually-hidden">Товары каталога</h2>
         <!--разметить ссылки-->
         <ul class="catalog-items-sorting">
-            <p>СОРТИРОВКА</p>
-            <li>ПО ЦЕНЕ</li>
-            <li>ПО ТИПУ</li>
-            <li>ПО ФУНКЦИОНАЛУ</li>
+            <p class="filter-sorting">СОРТИРОВКА</p>
+            <li class="filter-sorting">ПО ЦЕНЕ</li>
+            <li class="filter-sorting">ПО ТИПУ</li>
+            <li class="filter-sorting">ПО ФУНКЦИОНАЛУ</li>
             <li><img src="img/icon-up-dir.svg" alt="icon"></li>
             <li><img src="img/icon-down-dir.svg" alt="icon"></li>
         </ul>
@@ -195,22 +195,23 @@
     </main>
     <footer class="main-footer">
         <div class="main-footer-top">
-        <img src="img/" alt="Логотип сайта «Техномаркт»">
+        <!--<img src="img/" alt="Логотип сайта «Техномаркт»">-->
+        <a class="main-navigation-logo" href="#">ТЕХНОМАРТ</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
         +7 (812) 555-05-55</p>
         <nav class="main-footer-navigation">
             <ul class="main-footer-navigation-first-list">
-                <li>Компания</li>
-                <li>Новости</li>
-                <li>Каталог</li>
-                <li>Доставка</li>
-                <li>Контакты</li>
+                <li><a class="footer-first-list-link" href="#">Компания</a></li>
+                <li><a class="footer-first-list-link" href="#">Новости</a></li>
+                <li><a class="footer-first-list-link" href="#">Каталог</a></li>
+                <li><a class="footer-first-list-link" href="#">Доставка</a></li>
+                <li><a class="footer-first-list-link" href="#">Контакты</a></li>
             </ul>
             <ul class="main-footer-navigation-second-list">
-                <li>Материалы</li>
-                <li>Техника</li>
-                <li>Инструмент</li>
-                <li>Спецпредложения</li>
+                <li><a class="footer-second-list-link" href="#">Материалы</a></li>
+                <li><a class="footer-second-list-link" href="#">Техника</a></li>
+                <li><a class="footer-second-list-link" href="#">Инструмент</a></li>
+                <li><a class="footer-second-list-link" href="#">Спецпредложения</a></li>
             </ul>
         </nav>
         </div>
@@ -240,7 +241,7 @@
             <p>Обратная связь: <br>
             <a href="https://mail.@htmlacademy.ru">mail.@htmlacademy.ru</a></p>
             <p>Разработанно: <br>
-            <a href="https://htmlacademy.ru"></a></p>
+            <a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
         </div>
     </footer>
     
