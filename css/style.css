@@ -25,12 +25,22 @@ header {
     line-height: 18px;
     font-weight: normal;
 
+    width: 100%;
+    margin-bottom: 46px;
+
     background-color: #293449;
 }
+
 
 .main-navigation-bar,
 .buy-navigation {
     list-style: none;
+}
+
+.main-navigation-bar,
+.site-navigation-bar {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .main-navigation-logo a{
@@ -727,9 +737,11 @@ legend {
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
+    align-items: center;
 }
 
 .main-navigation {
+
     
     width: 100%;
 
@@ -737,17 +749,57 @@ legend {
 
 }
 
+.conteiner {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 .main-navigation-bar {
     width: 940px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
     padding: 0;
     
 }
 
 .main-navigation-logo a {
-    display: block;
     width: 220px;
     
+}
+
+.main-header-down {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.site-tel-adres {
+    display: flex;
+    flex-direction: column;
+}
+
+.enter-navigation {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+}
+
+.site-navigation {
+    width: 940px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation-bar li {
+    list-style: none;
+}
+
+.site-navigation-bar li a {
+    display: block;
+    width: 90px;
 }
