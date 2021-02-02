@@ -849,13 +849,16 @@ legend {
     padding: 0;
 }
 
-.site-navigation-bar li {
-  
-    
-}
-
-.site-navigation-bar a {
-    
-}
-
 /* flex for main */
+
+.catalog-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-list li {
+    width: 300px;
+}
+
