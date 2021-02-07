@@ -40,13 +40,13 @@
         </div>
             <nav class="site-navigation conteiner">
             <ul class="site-navigation-bar">
-                <li><a href="#">Главная</a></li>
+                <li><a class="bar-left" href="#">Главная</a></li>
                 <li><a href="#">Компания</a></li>
                 <li><a href="#">Каталог</a></li>
                 <li><a href="#">Новости</a></li>
                 <li><a href="#">Спецпредложения</a></li>
                 <li><a href="#">Доставка</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a class="bar-right" href="#">Контакты</a></li>
             </ul>
             </nav>
         
@@ -55,56 +55,62 @@
         <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
         <section class="catalog">
             <h2 class="visually-hidden">Каталог</h2>
-            <ul class="catalog-list">
-                <li class="catalog-list-materials">
-                    Материалы
-                    <img src="img/icon-1.svg" alt="Материалы">
-                    <img src="img/new flag.png" alt="Новинка">
-                    <a href="#">НА ЛЮБОЙ ВКУС</a>
-                </li>
-                <li class="catalog-list-tools">
-                    Инструменты
-                    <img src="img/icon-2.svg" alt="Инструменты">
-                    <a href="#">НА ВСЕ СЛУЧАИ</a>
-                </li>
-                <li class="catalog-list-engineering">
-                    Техника
-                    <img src="img/icon-3.svg" alt="Техника">
-                    <a href="#">ДЛЯ СТРОЙКИ</a>
-                </li>
-                <li class="catalog-list-discounts">
-                    Скидки 50%
-                    <img src="img/icon-4.svg" alt="Скидки 50%">
-                    <a href="#">НА 350 ТОВАРОВ</a>
-                </li>
-                <li class="catalog-list-delivery">
-                    Доставка
-                    <img src="img/icon-5.svg" alt="Доставка">
-                    <a href="#">БЕСПЛАТНО</a>
-                </li>
-            </ul>
-            <ul class="catalog-tools">
-                <li class="catalog-tools-drill">
-                    <h3>Дрели</h3>
-                    <p>Соседям на радость</p>
-                    <!--<img src="img/slider 2.jpg" alt="Дрели">-->
-                    <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
-                    <button class="catalog-tools-slider"><img src="img/slider dots copy 2.png" alt=""></button>
-                    <button class="catalog-tools-slider"><img src="img/slider dots copy.png" alt=""></button>
-                    <button class="catalog-tools-btn"><img src="img/icon-left.svg" alt="Previous"></button>
-                    <button class="catalog-tools-btn"><img src="img/icon-right.svg" alt="Next"></button>
-                </li>
-                <li class="catalog-tools-perforators visually-hidden">
-                    <h3>Перфораторы</h3>
-                    <p>Настоящие мужские игрушки</p>
-                    <!--<img src="img/slider 1.jpg" alt="Перфораторы">-->
-                    <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
-                    <button class="catalog-tools-slider"><img src="img/slider dots copy 2.png" alt=""></button>
-                    <button class="catalog-tools-slider"><img src="img/slider dots copy.png" alt=""></button>
-                    <button class="catalog-tools-btn"><img src="img/icon-left.svg" alt="Previous"></button>
-                    <button class="catalog-tools-btn"><img src="img/icon-right.svg" alt="Next"></button>
-                </li>
-            </ul>
+            
+                <ul class="catalog-list catalog-list-flex">
+                    <div class="catalog-list-flex-left">
+                        <div class="catalog-list-flex-left-top">
+                            <li class="catalog-list-materials">
+                                Материалы
+                                <img src="img/icon-1.svg" alt="Материалы">
+                                <img src="img/new flag.png" alt="Новинка">
+                                <a href="#">НА ЛЮБОЙ ВКУС</a>
+                            </li>
+                            <li class="catalog-list-tools">
+                                Инструменты
+                                <img src="img/icon-2.svg" alt="Инструменты">
+                                <a href="#">НА ВСЕ СЛУЧАИ</a>
+                            </li>
+                        </div>
+                        <li class="catalog-tools-drill">
+                            <h3>Дрели</h3>
+                            <p>Соседям на радость</p>
+                            <!--<img src="img/slider 2.jpg" alt="Дрели">-->
+                            <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
+                            <button class="catalog-tools-slider"><img src="img/slider dots copy 2.png" alt=""></button>
+                            <button class="catalog-tools-slider"><img src="img/slider dots copy.png" alt=""></button>
+                            <button class="catalog-tools-btn"><img src="img/icon-left.svg" alt="Previous"></button>
+                            <button class="catalog-tools-btn"><img src="img/icon-right.svg" alt="Next"></button>
+                        </li>
+                        <li class="catalog-tools-perforators visually-hidden">
+                            <h3>Перфораторы</h3>
+                            <p>Настоящие мужские игрушки</p>
+                            <!--<img src="img/slider 1.jpg" alt="Перфораторы">-->
+                            <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
+                            <button class="catalog-tools-slider"><img src="img/slider dots copy 2.png" alt=""></button>
+                            <button class="catalog-tools-slider"><img src="img/slider dots copy.png" alt=""></button>
+                            <button class="catalog-tools-btn"><img src="img/icon-left.svg" alt="Previous"></button>
+                            <button class="catalog-tools-btn"><img src="img/icon-right.svg" alt="Next"></button>
+                        </li>
+                    </div>
+                    <div class="catalog-list-flex-right">  
+                        <li class="catalog-list-engineering">
+                            Техника
+                            <img src="img/icon-3.svg" alt="Техника">
+                            <a href="#">ДЛЯ СТРОЙКИ</a>
+                        </li>
+                        <li class="catalog-list-discounts">
+                            Скидки 50%
+                            <img src="img/icon-4.svg" alt="Скидки 50%">
+                            <a href="#">НА 350 ТОВАРОВ</a>
+                        </li>
+                        <li class="catalog-list-delivery">
+                            Доставка
+                            <img src="img/icon-5.svg" alt="Доставка">
+                            <a href="#">БЕСПЛАТНО</a>
+                        </li>
+                    </div> 
+                 </ul>
+            
         </section>
         <section class="popular-goods">
             <h2 class="visually-hidden">Популярные товары</h2>
@@ -237,7 +243,9 @@
     <footer class="main-footer">
         <div class="main-footer-top">
         <!--<img src="img/" alt="Логотип сайта «Техномаркт»">-->
-        <a class="main-navigation-logo" href="#">ТЕХНОМАРТ</a>
+        <div class="main-navigation-logo">
+            <a href="#">ТЕХНОМАРТ</a>
+        </div>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
         +7 (812) 555-05-55</p>
         <nav class="main-footer-navigation">

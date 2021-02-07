@@ -61,7 +61,8 @@ header {
 }
 
 .main-navigation-bar a,
-.buy-navigation a{
+.buy-navigation a,
+.main-navigation-logo a {
     
     color:#ffffff;
 }
@@ -151,7 +152,7 @@ header {
     line-height: 17px;
     font-weight: normal;
     
-    background-color: #32425c;
+
     list-style: none;
   
 }
@@ -169,7 +170,16 @@ header {
     display: block;
     border-bottom-style: solid;
     border-bottom-width: 5px;
-    border-bottom-color: #293449;  
+    border-bottom-color: #293449;
+    background-color: #32425c;
+}
+
+.site-navigation-bar .bar-left {
+    padding-left: 55px;
+}
+
+.site-navigation-bar .bar-right {
+    padding-right: 55px;
 }
 
 .site-navigation-bar a:hover {
@@ -220,7 +230,14 @@ header {
     line-height: 30px;
     color: #ffffff;
 
+    margin: 0;
+    padding: 0;
+
     list-style: none;
+}
+
+.catalog-list li {
+    width: 300px;
 }
 
 .catalog-list a {
@@ -229,15 +246,22 @@ header {
     font-weight: normal;
     color: #ffffff;
 
-    background-color: #e5ac40;
+
 }
 
 .catalog-list-materials {
     background-color: #ffbf47;
+    margin-bottom: 20px;
+}
+
+.catalog-list-materials a{
+    background-color: #e5ac40;
 }
 
 .catalog-list-tools {
     background-color: #3bbce3;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .catalog-list-tools a {
@@ -263,25 +287,28 @@ header {
 .catalog-list-delivery {
     background-color: #ffc047;
 }
-
-.catalog-tools{
+/*                                переопределить после разметки под флекс!!!!
+.catalog-tools {
     list-style: none;
 }
-
-.catalog-tools h3 {
+*/
+.catalog-tools-drill h3,
+.catalog-tools-perforators h3 {
     font-family: Cuprum, Arial, sans-serif;
     font-size: 36px;
     line-height: 36px;
     color: #ffffff;
 }
 
-.catalog-tools p {
+.catalog-tools-drill p,
+.catalog-tools-perforators p {
     line-height: 24px;
     font-weight: normal;
     color: #ffffff;
 }
 
-.catalog-tools a {
+.catalog-tools-drill a,
+.catalog-tools-perforators a {
     font-family: Cuprum, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -295,7 +322,6 @@ header {
     background-color: #685c53;
     background-image: url("../img/slider 2.jpg");
     background-repeat: no-repeat;
-
 }
 
 .catalog-tools-perforators {
@@ -303,6 +329,7 @@ header {
     background-image: url("../img/slider 1.jpg");
     background-repeat: no-repeat;
 }
+
 
 /*section class="popular-goods"*/
 
@@ -584,18 +611,6 @@ footer {
     color: rgba(255, 209, 128, 0.5);
 }
 
-.main-navigation-logo {
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: normal;
-    color: #ffffff;
-/*
-    background-color: #ee3643;
-    border-bottom-style: solid;
-    border-bottom-width: 5px;
-    border-bottom-color: #b52933;
-*/
-}
 
 .main-footer-down {
     font-family: Cuprum, Arial, sans-serif;
@@ -784,7 +799,7 @@ legend {
 }
 
 .main-navigation-logo {
-    padding: 12px 55px;
+    padding: 15px 55px;
 
 }
 
@@ -843,7 +858,6 @@ legend {
 .site-navigation-bar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     list-style: none;
     margin: 0 0 60px;
     padding: 0;
@@ -851,14 +865,35 @@ legend {
 
 /* flex for main */
 
-.catalog-list {
-    margin: 0;
-    padding: 0;
+.catalog-list-flex {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.catalog-list li {
-    width: 300px;
+.catalog-list-flex-left {
+    display: flex;
+    flex-direction: column;
 }
 
+.catalog-list-flex-left-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.catalog-list-flex-right {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.catalog-list-flex-right li {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+.catalog-list .catalog-tools-drill {
+    width: 620px;
+}
+
+.site-navigation-bar
