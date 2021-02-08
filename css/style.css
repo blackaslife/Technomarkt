@@ -35,6 +35,7 @@ header {
     font-size: 17px;
     line-height: 18px;
     font-weight: normal;
+    color: #ffffff;
 
     width: 100%;
     margin-bottom: 46px;
@@ -42,22 +43,27 @@ header {
     background-color: #293449;
 }
 
-
 .main-navigation-bar,
 .buy-navigation {
     list-style: none;
 }
 
-.main-navigation-logo a{
+.main-navigation-logo {
+    display: flex;
+}
+
+.main-navigation-logo a {
     font-size: 24px;
     line-height: 24px;
     font-weight: normal;
-    text-align: center;
 
+    padding: 12px 55px;
     background-color: #ee3643;
     border-bottom-style: solid;
     border-bottom-width: 5px;
     border-bottom-color: #b52933;
+
+    margin-bottom: -5px;
 }
 
 .main-navigation-bar a,
@@ -78,13 +84,39 @@ header {
 .main-navigation-logo a:focus{
     background-color: #ba2732;
 }
+
+.main-navigation-search input{
+    display: block;
+    background-color: #293449;
+    background: url(../img/icon-search.svg) no-repeat;
+}
+
+.main-navigation-focus a {
+    display: block;
+    width: 102px;
+    padding-top: 13px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 18px;
+}
+
+.main-navigation-bar li {
+    margin: 0;
+    padding: 0;
+}
+
 .main-navigation-focus a:focus {
     color: rgba(255,255,255,0.6);
 
     background-color: #161d29;
 }
 
-.buy-navigation {
+.buy-navigation a{
+    display: block;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
     background-color: #63a63e;
 }
 
@@ -791,22 +823,11 @@ legend {
 .main-navigation-bar {
     width: 940px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
     
-}
-
-.main-navigation-logo {
-    padding: 15px 55px;
-
-}
-
-.main-navigation-logo a {
-    align-content: center;
-    width: 220px;
-    padding: 12px 55px;
 }
 
 .main-header-down {
@@ -896,4 +917,4 @@ legend {
     width: 620px;
 }
 
-.site-navigation-bar
+.main-navigation-search
