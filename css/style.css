@@ -417,6 +417,9 @@ header {
 
 .popular-goods-list {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
 }
 /*cut img with out border*/
 .popular-goods-item,
@@ -478,6 +481,10 @@ header {
 
 .popular-brands-list {
     list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .brands-icon {
@@ -485,6 +492,8 @@ header {
     height: 145px;
     border: 1px solid lightgrey;
     text-align: center;
+
+    margin-top: 20px;
 }
 
 .brands-icon:hover {
@@ -566,6 +575,11 @@ header {
 
 /*section company info*/
 
+.flex-info-contacts {
+    display: flex;
+
+}
+
 .company-info h2 {
     font-family: Cuprum, Arial, sans-serif;
     font-size: 30px;
@@ -636,6 +650,7 @@ header {
 footer {
     margin: 0px;
     padding: 0px;
+    
 }
 
 .main-footer-top {
@@ -646,9 +661,32 @@ footer {
     color: #f3f7f9;
 
     background-color: #32425c;
+
+   
 }
 
-.main-footer-top ul {
+.flex-for-footer-top {
+    display: flex;
+    
+}
+
+.main-footer-navigation {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main-footer-navigation-first-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-footer-navigation-second-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-footer-navigation ul {
     list-style: none;
 }
 
@@ -682,6 +720,17 @@ footer {
     color: #ffffff;
 
     background-color: #293449;
+
+
+}
+
+.flex-for-footer-down {
+    display: flex;
+}
+
+.social-list {
+    display: flex;
+
 }
 
 .main-footer-down ul {
@@ -895,8 +944,6 @@ legend {
     padding: 14px 26px 11px ;
 }
 
-
-
 .site-navigation-bar {
     display: flex;
     flex-direction: row;
@@ -939,3 +986,5 @@ legend {
 }
 
 .main-navigation-search
+
+.popular-goods-list
