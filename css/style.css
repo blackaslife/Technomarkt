@@ -511,6 +511,15 @@ header {
 
 /*section services*/
 
+.services-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-flex-down {
+    display: flex;
+}
+
 .services {
     font-size: 13px;
     line-height: 24px;
@@ -532,12 +541,18 @@ header {
     font-size: 21px;
     line-height: 30px;
     color: #ffffff;
+    text-align: left;
     
 
     background-color: #32425c;
     display: block;
     border: none;
-    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: 240px;
+    border-top: 2px solid #34425a;
+    border-bottom: 2px solid #2f3d56;
 }
 
 .services-btn:hover {
@@ -549,6 +564,15 @@ header {
 
     background-color: #ffffff;
     outline: none;
+    border: none;
+}
+
+.services-btn-layer {
+    display: inline-block;
+    position: relative;
+    left: 230px;
+    bottom: 240px;
+
 }
 
 .services-list {
@@ -561,6 +585,12 @@ header {
      line-height: 36px;
      font-weight: normal;
      color: #32425c;
+}
+
+.services-delivery-img {
+    position: relative;
+    bottom: 150px;
+    left: 180px;
 }
 
 .services-credit-send {
