@@ -709,23 +709,34 @@ footer {
 .main-footer-navigation-first-list {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .main-footer-navigation-second-list {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .main-footer-navigation ul {
     list-style: none;
 }
 
+
+.flex-for-right-top {
+    margin-left: auto;
+}
+
 .footer-first-list-link {
     color: #f3f7f9;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .footer-second-list-link {
     color: #ffda96;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .footer-first-list-link:hover,
@@ -741,6 +752,9 @@ footer {
     color: rgba(255, 209, 128, 0.5);
 }
 
+.footer-list-last-link {
+    padding-right: 0;
+}
 
 .main-footer-down {
     font-family: Cuprum, Arial, sans-serif;
@@ -756,11 +770,24 @@ footer {
 
 .flex-for-footer-down {
     display: flex;
+    justify-content: space-between;
 }
 
 .social-list {
     display: flex;
+    
+}
 
+.social-button {
+    display: flex;
+    background-color: #212a3a;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.social-button img{
+    margin: auto;
 }
 
 .main-footer-down ul {
@@ -1015,6 +1042,4 @@ legend {
     width: 620px;
 }
 
-.main-navigation-search
-
-.popular-goods-list
+main-footer-navigation-first-list
