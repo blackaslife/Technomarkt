@@ -13,44 +13,51 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <!--<img src="img/index-logo.svg" alt="Логотип сайта «Техномаркт»">-->
-            <ul class="main-navigation-bar">
-                <li class="main-navigation-logo"><a href="#">ТЕХНОМАРТ</a></li>
-                <li><Form>
-                    <img src="img/icon-search.svg" alt="Поиск">
-                    <input type="search" name="q" placeholder="Поиск">
-                    <!--<button type="submit"></button>-->
-                </Form></li>
-                <li class="main-navigation-focus"><img src="img/icon-bookmark.svg" alt="Закладки"><a href="#">Закладки: 0</a></li>
-                <li class="main-navigation-focus"><img src="img/cart-icon.svg" alt="Корзина"><a href="#">Корзина: 10</a></li>
-                <li class="buy-navigation"><a href="#">Оформить заказ</a></li>
-            </ul>
+            <div class="conteiner">
+                <!--<img src="img/index-logo.svg" alt="Логотип сайта «Техномаркт»">-->
+                <ul class="main-navigation-bar">
+                    <li class="main-navigation-logo"><a href="#">ТЕХНОМАРТ</a></li>
+                    <li class="main-navigation-search"><Form>
+                        <!--<img src="img/icon-search.svg" alt="Поиск">-->
+                        <input type="search" name="q" placeholder="Поиск">
+                        <!--<button type="submit"></button>-->
+                    </Form></li>
+                    <li class="main-navigation-focus"><a href="#"><img src="img/icon-bookmark.svg" alt="Закладки">Закладки: 0</a></li>
+                    <li class="main-navigation-focus"><a href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина: 10</a></li>
+                    <li class="buy-navigation"><a href="#">Оформить заказ</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="main-header-down">
+        <div class="main-header-down conteiner">
             <p class="site-info">Интернет-магазин <br> строительных материалов <br> и инструмента для ремонта</p>
-            <p class="site-tel"><img src="img/icon-phone.svg" alt="Телефон"><a href="tel:+78125550555">+7(812) 555-05-55</a></p>
-            <p class="site-adres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <div class="site-tel-adres">
+                <p class="site-tel"><a href="tel:+78125550555"><img src="img/icon-phone.svg" alt="Телефон">+7(812) 555-05-55</a></p>
+                <p class="site-adres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </div>
             <div class="enter-account">
                 <a class="enter-user" href="#">
-                    <img src="img/icon-user.svg" alt="Пользоватиель">Равшан Джамшутович
-                    <img src="img/icon-logout.svg" alt="Выйти">
+                    <img class="enter-user-icon" src="img/icon-user.svg" alt="Пользоватиель">Равшан Джамшутович
+                    <img class="enter-user-logout" src="img/icon-logout.svg" alt="Выйти">
                 </a>
-                <a class="enter-options" href="#">Мои заказы</a>
-                <img src="img/Shape 1 copy.svg" alt="icon">
-                <a class="enter-options" href="#">Личный кабинет</a>
+                <div class="enter-account-option">
+                    <a class="enter-options" href="#">Мои заказы</a>
+                    <img src="img/Shape 1 copy.svg" alt="icon">
+                    <a class="enter-options" href="#">Личный кабинет</a>
+                </div>
             </div>
-            <nav class="site-navigation">
+        </div>    
+            <nav class="site-navigation conteiner">
             <ul class="site-navigation-bar">
-                <li><a href="#">Главная</a></li>
+                <li><a class="bar-left" href="#">Главная</a></li>
                 <li><a href="#">Компания</a></li>
                 <li><a href="#">Каталог</a></li>
                 <li><a href="#">Новости</a></li>
                 <li><a href="#">Спецпредложения</a></li>
                 <li><a href="#">Доставка</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a class="bar-right" href="#">Контакты</a></li>
             </ul>
             </nav>
-        </div>
+        
     </header>
     <main class="catalog">
     <h1 class="visually-hidden">Каталог перфораторов</h1>

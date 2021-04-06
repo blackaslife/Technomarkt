@@ -166,7 +166,7 @@ header {
 .site-tel a {
     display: block;
     color: #ee3643;
-    padding-top: 7px;
+    padding-top: 8px;
     padding-bottom: 7px;
     width: 264px;
     text-align: center;
@@ -263,6 +263,11 @@ header {
     color: #000000;
 
     background-color: #ffffff;
+}
+
+.enter-account-option {
+    margin-top: 5px;
+    margin-left: 17px;
 }
 
 .enter-options {
@@ -973,6 +978,7 @@ legend {
     flex-wrap: wrap;
 }
 
+
 .site-info {
     margin-top: 45px;
 }
@@ -999,6 +1005,34 @@ legend {
     
     margin-left: 10px;
     padding: 14px 26px 11px ;
+}
+
+.enter-account {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+.enter-user {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 69px;
+    padding-left: 48px;
+    position: relative;
+}
+
+.enter-user-icon {
+    position: absolute;
+    left: 14px;
+    top: 13px;
+    bottom: 14px;
+}
+
+.enter-user-logout {
+    position: absolute;
+    top: 14px;
+    bottom: 14px;
+    right: 10px;
 }
 
 .site-navigation-bar {
@@ -1042,4 +1076,4 @@ legend {
     width: 620px;
 }
 
-main-footer-navigation-first-list
+bar-left
