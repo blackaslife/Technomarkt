@@ -1076,4 +1076,20 @@ legend {
     width: 620px;
 }
 
-bar-left
+.catalog-navigation-line {
+    display: flex;
+    padding: 0;
+}
+
+
+
+.catalog-name {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 30px;
+}
+
+.flex-catalog {
+    display: flex;
+    
+}
