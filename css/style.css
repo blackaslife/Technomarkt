@@ -734,14 +734,14 @@ footer {
 
 .footer-first-list-link {
     color: #f3f7f9;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .footer-second-list-link {
     color: #ffda96;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .footer-first-list-link:hover,
@@ -775,6 +775,7 @@ footer {
 
 .flex-for-footer-down {
     display: flex;
+    /* delete space-between */
     justify-content: space-between;
 }
 
@@ -793,6 +794,14 @@ footer {
 
 .social-button img{
     margin: auto;
+}
+
+.social-button:hover {
+    background-color: #ee3643;
+}
+
+.social-button:focus {
+    background-color: #ee3643;
 }
 
 .main-footer-down ul {
@@ -819,10 +828,27 @@ footer {
     font-weight: normal;
     
     list-style: none;
+
+    display: flex;
+    padding: 0;
+
 }
 
 .catalog-navigation-line a {
     color: #000000;
+}
+
+.catalog-navigation-line li {
+    margin-right: 16px;
+}
+
+.catalog-navigation-line li img {
+    margin-right:16px;
+    vertical-align: -1px;
+}
+
+.catalog-navigation-line li:nth-child(1) {
+    margin-right: 0;
 }
 
 .catalog-name{
@@ -843,6 +869,14 @@ footer {
     font-weight: normal;
     margin: 0;
 }
+
+.catalog-filter-name,
+.items-sorting p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+}
+
 
 .catalog-filter-name,
 .range-value {
@@ -895,13 +929,37 @@ legend {
 .items-sorting {
     display: flex;
     background-color: #f7f3ec;
-    width: 700px;
+    width: 680px;
+    justify-content: space-between;
+
 }
 
-.items-sorting ul {
+.filter-sorting-list {
     list-style: none;
     display: flex;
     margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.filter-sorting-list li:nth-child(1) {
+    padding-right: 70px;
+}
+
+.filter-sorting-list li:nth-child(2) {
+    padding-right: 65px;
+}
+
+.filter-sorting-list li:nth-child(3) {
+    padding-right: 45px;
+}
+
+.filter-sorting-list li:nth-child(4) {
+    padding-right: 20px;
+}
+
+.filter-sorting-list li:nth-child(5) {
+    padding-right: 15px;
 }
 
 .catalog-items-goods {
@@ -1083,10 +1141,7 @@ legend {
     width: 620px;
 }
 
-.catalog-navigation-line {
-    display: flex;
-    padding: 0;
-}
+
 
 
 
@@ -1101,6 +1156,10 @@ legend {
 .flex-catalog {
     display: flex;
     
+}
+
+.flex-catalog-filter {
+    margin-right: 20px;
 }
 
 .flex-catalog-items {
@@ -1124,3 +1183,5 @@ legend {
 .items-goods-navigation {
     margin-top: 50px;
 }
+
+.footer-second-list-link
