@@ -319,24 +319,57 @@ header {
 .catalog-list-materials {
     background-color: #ffbf47;
     margin-bottom: 20px;
+    display: flex;
+    position: relative;
 }
 
 .catalog-list-materials a{
     background-color: #e5ac40;
 }
 
+
+
+.catalog-list-materials-img {
+    padding-top: 31px;
+    padding-right: 43px;
+    padding-bottom: 27px;
+    margin-left: auto;
+}
+
+.catalog-list-materials-new {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .catalog-list-tools {
     background-color: #3bbce3;
     margin-left: 20px;
     margin-bottom: 20px;
+    display: flex;
 }
 
 .catalog-list-tools a {
     background-color: #35a9cc;
 }
 
+.catalog-list-tools img {
+    padding-top: 33px;
+    padding-right: 28px;
+    padding-bottom: 29px;
+    margin-left: auto;
+}
+
 .catalog-list-engineering {
     background-color: #dc91d8;
+    display: flex;
+}
+
+.catalog-list-engineering img {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
 }
 
 .catalog-list-engineering a {
@@ -345,14 +378,53 @@ header {
 
 .catalog-list-discounts {
     background-color: #8ed78f;
+    display: flex;
 }
 
 .catalog-list-discounts a {
     background-color: #80c180;
 }
 
+.catalog-list-discounts img {
+    padding-top: 26px;
+    padding-right: 45px;
+    padding-bottom: 25px;
+    margin-left: auto;
+}
+
 .catalog-list-delivery {
     background-color: #ffc047;
+    display: flex;
+}
+
+.catalog-list-delivery a {
+    background-color: #e5ac40;
+}
+
+.catalog-list-delivery img {
+    padding-top: 32px;
+    padding-right: 31px;
+    padding-bottom: 28px;
+    margin-left: auto;
+}
+
+.catalog-list-conteiner-a {
+    display: block;
+    width: 135px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-left: 23px;
+    margin-bottom: 22px;
+    border-radius: 2px;
+}
+
+.catalog-list-conteiner-p {
+    display:block;
+    padding-left: 23px;
+    padding-top: 24px;
+    padding-bottom: 9px;
+    margin: 0;
 }
 /*                                переопределить после разметки под флекс!!!!
 .catalog-tools {
@@ -385,18 +457,30 @@ header {
     background-color: #ee3643;
 }
 
+.catalog-slider {
+    position: relative;
+    
+}
+
 .catalog-tools-drill {
     background-color: #685c53;
     background-image: url("../img/slider 2.jpg");
     background-repeat: no-repeat;
+
+    position: absolute;
 }
 
 .catalog-tools-perforators {
     background-color: #8f8985;
     background-image: url("../img/slider 1.jpg");
     background-repeat: no-repeat;
+
+    position: absolute;
+    z-index: -1;
+
 }
 
+.catalog-list-engineering
 
 /*section class="popular-goods"*/
 
