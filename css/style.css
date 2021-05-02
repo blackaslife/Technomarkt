@@ -157,6 +157,8 @@ header {
     font-weight: normal;
     line-height: 23px;
     color: #ee3643;
+    margin-top: 45px;
+    padding-left: 53px;
 }
 
 .site-tel  {
@@ -207,6 +209,43 @@ header {
 .enter-navigation a:focus {
     color: rgba(0, 0, 0, 0.3);
 }
+
+.enter-navigation {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+.enter-navigation li {
+    margin-top: 45px;
+}
+
+.enter-navigation-login {
+    padding-top: 11px;
+    padding-left: 48px;
+    padding-right: 28px;
+    padding-bottom: 13px;
+
+    position: relative;
+}
+
+.enter-navigation-registration {
+    margin-left: 10px;
+    padding-top: 11px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 13px;
+}
+
+.enter-img {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+}
+
+
 
 .site-navigation-bar {
     font-family: Cuprum, Arial, sans-serif;
@@ -437,13 +476,22 @@ header {
     font-size: 36px;
     line-height: 36px;
     color: #ffffff;
+    margin: 0;
+    position: absolute;
+    top: 25px;
+    left: 25px;
 }
 
 .catalog-tools-drill p,
 .catalog-tools-perforators p {
+    font-size: 18px;
     line-height: 24px;
     font-weight: normal;
     color: #ffffff;
+    margin: 0;
+    position: absolute;
+    top: 63px;
+    left: 25px;
 }
 
 .catalog-tools-drill a,
@@ -455,6 +503,17 @@ header {
     color: #ffffff;
 
     background-color: #ee3643;
+
+    width: 195px;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    border-radius: 2px;
+
+    position: absolute;
+    left: 25px;
+    top: 206px;
+    
 }
 
 .catalog-slider {
@@ -462,25 +521,65 @@ header {
     
 }
 
+.catalog-list .catalog-tools-drill,
+.catalog-list .catalog-tools-perforators {
+    width: 620px;
+}
+
 .catalog-tools-drill {
     background-color: #685c53;
-    background-image: url("../img/slider 2.jpg");
+    /*background-image: url("../img/slider 2.jpg");*/
     background-repeat: no-repeat;
 
     position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 620px;
+    height: 100%;
 }
+
+
 
 .catalog-tools-perforators {
     background-color: #8f8985;
-    background-image: url("../img/slider 1.jpg");
+    /*background-image: url("../img/slider 1.jpg");*/
     background-repeat: no-repeat;
 
     position: absolute;
     z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 620px;
+    height: 100%;
+}
+
+.catalog-tools-btn-left {
+    position: absolute;
+    left: 25px;
+    top: 114px;
 
 }
 
-.catalog-list-engineering
+.catalog-tools-btn-right {
+    position: absolute;
+    right: 20px;
+    top: 114px;
+}
+
+.catalog-tools-slider-left {
+    position: absolute;
+    left: 290px;
+    top: 220px;
+}
+
+.catalog-tools-slider-right {
+    position: absolute;
+    right: 290px;
+    top: 220px;
+}
+
 
 /*section class="popular-goods"*/
 
@@ -492,7 +591,14 @@ header {
     color: #32425c;
 
     background-color: #f9f5f0;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    position: relative;
 }
+
+
 
 .popular-goods-link a {
     font-family: Cuprum, Arial, sans-serif;
@@ -502,6 +608,19 @@ header {
     color: #ffffff;
 
     background-color: #ee3643;
+
+    width: 255px;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    border-radius: 2px;
+    display: block;
+
+    position: absolute;
+    top: 25px;
+    right: 24px;
+
+    
 }
 
 .popular-goods-list {
@@ -556,6 +675,11 @@ header {
     color: #32425c;
 
     background-color: #f9f5f0;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    position: relative;
 }
 
 .popular-brands-link a {
@@ -566,6 +690,17 @@ header {
     color: #ffffff;
 
     background-color: #ee3643;
+
+    width: 253px;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    border-radius: 2px;
+    display: block;
+
+    position: absolute;
+    top: 25px;
+    right: 24px;
 }
 
 .popular-brands-list {
@@ -1128,33 +1263,16 @@ legend {
 }
 
 
-.site-info {
-    margin-top: 45px;
-}
+
 
 .site-tel-adres {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 68px;
+    margin: 0 69px;
 }
 
-.enter-navigation {
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
 
-}
-
-.enter-navigation li {
-    margin-top: 45px;
-}
-
-.enter-navigation li a {
-    
-    margin-left: 10px;
-    padding: 14px 26px 11px ;
-}
 
 .enter-account {
     display: flex;
@@ -1221,9 +1339,6 @@ legend {
 }
 
 
-.catalog-list .catalog-tools-drill {
-    width: 620px;
-}
 
 
 
