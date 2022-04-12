@@ -629,13 +629,22 @@ header {
     justify-content: space-between;
     padding: 0;
 }
+
 /*cut img with out border*/
 .popular-goods-item,
 .items-goods {
+    position: relative;
     width: 220px;
     height: 318px;
+    padding-bottom: 20px;
     text-align: center;
     border: 1px solid lightgrey;
+}
+
+
+.img-new {
+    position: absolute;
+    right: 0;
 }
 
 /*add btn instead img*/
@@ -644,21 +653,42 @@ header {
     box-shadow: 0 0 10px rgba(122,122,122,0.5);
 }
 
+.goods-name {
+    padding-top: 22px;
+    padding-bottom: 7px;
+    margin: 0;
+}
+
 /* add :focus */
 
 .old-price {
     font-size: 17px;
     line-height: 18px;
+    margin: 0;
+    padding-top: 10px ;
+    padding-bottom: 10px;
     text-decoration: line-through;
     color: #a9a9a9;
     text-align: center;
 }
 
+.empty-price {
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+
 /*use gradient*/
 .new-price {
+    
+
+    width: 141px;
     font-size: 17px;
     line-height: 18px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    border-radius: 3px;
     color: #ffffff;
+    margin: 0px 35px 20px 42px ;
 
     background-color: #ee3643;
 	
