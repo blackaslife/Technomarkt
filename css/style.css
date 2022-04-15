@@ -48,7 +48,7 @@ header {
     list-style: none;
 }
 
-.main-navigation-logo {
+.main-navigation-logo { 
     display: flex;
 }
 
@@ -56,8 +56,8 @@ header {
     font-size: 24px;
     line-height: 24px;
     font-weight: normal;
-
-    padding: 12px 55px;
+    width: 120px;
+    padding: 12px 50px;
     background-color: #ee3643;
     border-bottom-style: solid;
     border-bottom-width: 5px;
@@ -91,7 +91,7 @@ header {
 
 .main-navigation-search input{
     display: block;
-    color: #000000;
+    color: #000;
     width: 270px;
     padding-top: 13px;
     padding-right: 30px;
@@ -101,11 +101,16 @@ header {
     background-color: #293449;
     background: url(../img/icon-search.svg) no-repeat;
     background-position: left 17px top 14px;
+    
+}
+
+.main-navigation-search input::placeholder {
+    color: #fff;
 }
 
 .main-navigation-focus a {
     display: block;
-    width: 106px;
+    width: 107px;
     padding-top: 13px;
     padding-right: 25px;
     padding-bottom: 15px;
@@ -130,6 +135,7 @@ header {
 
 .buy-navigation a{
     display: block;
+    width: 110px;
     padding-top: 15px;
     padding-right: 20px;
     padding-bottom: 15px;
@@ -159,6 +165,7 @@ header {
     color: #ee3643;
     margin-top: 45px;
     padding-left: 53px;
+    flex-grow: 1;
 }
 
 .site-tel  {
@@ -216,6 +223,7 @@ header {
     margin: 0;
     padding: 0;
     margin-left: auto;
+    flex-grow: 1;
 }
 
 .enter-navigation li {
@@ -677,7 +685,7 @@ header {
     padding-bottom: 20px;
 }
 
-/*use gradient*/
+
 .new-price {
     
 
@@ -1294,6 +1302,7 @@ legend {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 
@@ -1303,7 +1312,8 @@ legend {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 69px;
+    margin: 0 ;
+    flex-grow: 8;
 }
 
 
