@@ -718,6 +718,8 @@ header {
 
     background-color: #f9f5f0;
 
+    margin-top: 21px;
+    margin-bottom: 0;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
@@ -747,6 +749,7 @@ header {
 
 .popular-brands-list {
     list-style: none;
+    margin-top: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -758,8 +761,12 @@ header {
     height: 145px;
     border: 1px solid lightgrey;
     text-align: center;
-
+    display: flex;
     margin-top: 20px;
+}
+
+.brands-icon a {
+    margin: auto;
 }
 
 .brands-icon:hover {
@@ -791,6 +798,7 @@ header {
     line-height: 24px;
     font-weight: normal;
 
+
     background-color: #f4f8f9;
 }
 
@@ -800,6 +808,10 @@ header {
     line-height: 30px;
     font-weight: normal;
     color: #000000;
+}
+
+.services-btn-box {
+    padding-top: 38px;
 }
 
 .services-btn {
@@ -813,8 +825,8 @@ header {
     background-color: #32425c;
     display: block;
     border: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     padding-left: 20px;
     width: 240px;
     border-top: 2px solid #34425a;
