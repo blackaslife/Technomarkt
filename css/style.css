@@ -336,6 +336,11 @@ header {
     color:rgba(50, 66, 92, 0.3)
 }
 
+.enter-option-img {
+    position: relative;
+    bottom: 3px;
+}
+
 /*main*/
 
 .catalog-list {
