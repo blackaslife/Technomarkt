@@ -241,33 +241,6 @@
                 <button>ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button>
             </section>
         </div>    
-        <!--no style for modal-->
-        <section class="modal modal-map">
-            <h2 class="visually-hidden">Как до нас добраться</h2>
-            <p>
-                <img src="img/map.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" height="446" width="940">
-            </p>
-            <button class="modal-close" type="button"><img src="img/map-close.svg" alt="Close"></button>
-        </section>
-        <!--no style for modal-->
-        <section class="modal modal-contact">
-            <form action="https://echo.htmlacademy.ru" method="POST">
-                <p class="modal-contact-appointment">
-                    <label for="appointment-name">Ваше имя:</label>
-                    <input type="text" id="appointment-name" name="name" value="" placeholder="Представьтесь, пожалуйста">
-                </p>
-                <p class="modal-contact-appointment">
-                    <label for="appointment-email">Ваш e-mail:</label>
-                    <input id="appointment-email" type="email" name="email" id="" value="" placeholder="Для отправки ответа">
-                </p>
-                <p class="modal-contact-appointment">
-                    <label for="appointment-text">Текст письма</label>
-                    <input type="text" id="appointment-text" name="text" value="" placeholder="В свободной форме">
-                </p>
-                <button class="modal-btn" type="submit">Отправить</button>
-            </form>
-            <button class="modal-close" type="button"><img src="img/map-close.svg" alt="Close"></button>
-        </section>
     </main>
     <footer class="main-footer">
         <div class="main-footer-top">
@@ -336,5 +309,29 @@
             </div>
         </div>
     </footer>
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+            <img src="img/map.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" height="446" width="940">
+        <button class="modal-close" type="button"><!-- <img src="img/map-close.svg" alt="Close"> -->Close</button>
+    </section>
+    <!--coordinates for modal-->
+    <section class="modal modal-contact">
+        <form action="https://echo.htmlacademy.ru" method="POST">
+            <p class="modal-contact-appointment-name">
+                <label class="label-name" for="appointment-name">Ваше имя:</label>
+                <input class="contact-name" type="text" id="appointment-name" name="name" value="" placeholder="Представьтесь, пожалуйста">
+            </p>
+            <p class="modal-contact-appointment-email">
+                <label class="label-email" for="appointment-email">Ваш e-mail:</label>
+                <input class="contact-email" id="appointment-email" type="email" name="email" value="" placeholder="Для отправки ответа">
+            </p>
+            <p class="modal-contact-appointment-text">
+                <label class="label-text" for="appointment-text">Текст письма</label>
+                <input class="contact-text" type="text" id="appointment-text" name="text" value="" placeholder="В свободной форме">
+            </p>
+            <button class="modal-btn" type="submit">SEND</button>
+        </form>
+        <button class="modal-close" type="button"><!-- <img src="img/map-close.svg" alt="Close"> -->Close</button>
+    </section>
 </body>
 </html>
