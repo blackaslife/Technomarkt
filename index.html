@@ -134,7 +134,6 @@
                 <li class="popular-goods-item"><img src="img/item-1.jpg" alt="BOSCH BFG 9000">
                     <h3 class="goods-name">Перфоратор BOSCH <br> BFG 9000</h3>
                     <p class="old-price">32500 Р.</p>
-                    <!--img instead background color-->
                     <p class="new-price">25500 Р.</p>
                 </li>
                 <li class="popular-goods-item"><img src="img/item-2.jpg" alt="BOSCH BFG 3000">
@@ -160,13 +159,13 @@
             <p class="popular-brands-link">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ: <a href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a></p>
             <ul class="popular-brands-list">
                 <li class="brands-icon"><a href="#"><img src="img/bosch.jpg" alt="BOSCH"></a></li>
-                <li class="brands-icon"><a href=""><img src="img/Makita.jpg" alt="Makita"></a></li>
-                <li class="brands-icon"><a href=""><img src="img/DeWALT.jpg" alt="DeWALT"></a></li>
-                <li class="brands-icon"><a href=""><img src="img/Интерскол.jpg" alt="Интерскол"></a></li>
-                <li class="brands-icon"><a href=""><img src="img/Hitachi.jpg" alt="HITACHI"></a></li>
-                <li class="brands-icon"><a href=""><img src="img/LG.jpg" alt="LG"></a></li>
-                <li class="brands-icon"><a href=""><img src="img/AEG.jpg" alt="AEG"></a></li>
-                <li class="brands-icon"><a href=""><img src="img/Metabo.jpg" alt="Metabo"></a></li>
+                <li class="brands-icon"><a href="#"><img src="img/Makita.jpg" alt="Makita"></a></li>
+                <li class="brands-icon"><a href="#"><img src="img/DeWALT.jpg" alt="DeWALT"></a></li>
+                <li class="brands-icon"><a href="#"><img src="img/Интерскол.jpg" alt="Интерскол"></a></li>
+                <li class="brands-icon"><a href="#"><img src="img/Hitachi.jpg" alt="HITACHI"></a></li>
+                <li class="brands-icon"><a href="#"><img src="img/LG.jpg" alt="LG"></a></li>
+                <li class="brands-icon"><a href="#"><img src="img/AEG.jpg" alt="AEG"></a></li>
+                <li class="brands-icon"><a href="#"><img src="img/Metabo.jpg" alt="Metabo"></a></li>
             </ul>
         </section>
         </div>
@@ -224,10 +223,9 @@
                 <p>Мы можем доставить ваш товар в самые отдалённые точки России! <br>
                     Техномарт работает со многими транспортными компаниями:</p>
                 <ul class="delivery-company">
-                    <!--list-style-image inherit span-->
-                    <li><span>&mdash;</span>Деловые линии</li>
-                    <li><span>&mdash;</span>Автотрейдинг</li>
-                    <li><span>&mdash;</span>ЖелДорЭкспедиция</li>
+                    <li><div></div>Деловые линии</li>
+                    <li><div></div>Автотрейдинг</li>
+                    <li><div></div>ЖелДорЭкспедиция</li>
                 </ul>
                 <a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
             </section>
@@ -246,7 +244,6 @@
         <div class="main-footer-top">
             <div class="flex-for-footer-top conteiner">
                 <div class="flex-for-left-top">
-                <!--<img src="img/" alt="Логотип сайта «Техномаркт»">-->
                     <div class="main-navigation-logo">
                         <a href="#">ТЕХНОМАРТ</a>
                     </div>
@@ -309,13 +306,13 @@
             </div>
         </div>
     </footer>
-    <section class="modal modal-map">
+    <section class="modal modal-map visually-hidden">
         <h2 class="visually-hidden">Как до нас добраться</h2>
             <img src="img/map.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" height="446" width="940">
-        <button class="modal-close" type="button"><!-- <img src="img/map-close.svg" alt="Close"> -->Close</button>
+        <button class="modal-close" type="button">Close</button>
     </section>
     <!--coordinates for modal-->
-    <section class="modal modal-contact">
+    <section class="modal modal-contact visually-hidden">
         <form action="https://echo.htmlacademy.ru" method="POST">
             <p class="modal-contact-appointment-name">
                 <label class="label-name" for="appointment-name">Ваше имя:</label>
@@ -331,7 +328,7 @@
             </p>
             <button class="modal-btn" type="submit">SEND</button>
         </form>
-        <button class="modal-close" type="button"><!-- <img src="img/map-close.svg" alt="Close"> -->Close</button>
+        <button class="modal-close" type="button">Close</button>
     </section>
 </body>
 </html>

@@ -817,7 +817,8 @@ header {
 }
 
 .brands-icon a {
-    margin: auto;
+     margin: auto; 
+
 }
 
 .brands-icon:hover {
@@ -825,6 +826,7 @@ header {
 }
 
 /*focus dont work*/
+/* change css style (opacity ~30%) */
 .brand-icon:focus {
     box-shadow: 0 0 5px rgba(122,122,122,0.5);
 }
@@ -937,6 +939,17 @@ header {
 .flex-info-contacts {
     display: flex;
 
+
+}
+
+.company-info {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+
+    width: 540px;
+    margin-right: 100px;
+    margin-bottom: 86px;    
 }
 
 .company-info h2 {
@@ -946,10 +959,14 @@ header {
     font-weight: normal;
 }
 
-.company-info {
-    font-size: 13px;
-    line-height: 24px;
-    font-weight: normal;
+.company-info p {
+    margin: 0;
+
+}
+
+.company-info p:nth-child(3) {
+    margin-top: 30px;
+    margin-bottom: 25px;
 }
 
 .delivery-company {
@@ -958,12 +975,36 @@ header {
     font-weight: normal;
    
     list-style: none;
-    list-style-image: inherit;
+
+
 }
-/*list-style-image inherit span*/
-.delivery-company span {
-    color: #ee3643;
-     padding-right: 7px;
+
+.delivery-company li {
+    margin-top: 22px;
+}
+
+.delivery-company div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    background-color: transparent;
+    border: 0;
+
+    position: absolute;
+} 
+
+.delivery-company div::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #ee3643;
+    border-radius: 1px;
+
+    position: absolute;
+    top: 10px;
+    left: -40px;
+
 }
 
 .company-info a {
@@ -974,12 +1015,25 @@ header {
     color: #ffffff;
 
     background-color: #ee3643;
+
+    width: 220px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 2px;
+    display: block;
+    border: none;
+
+    margin-top: 39px;
 }
 
 .contacts {
     font-size: 13px;
-    line-height: 24px;
+    line-height: 20px;
     font-weight: normal;
+
+    width: 300px;
+    margin-bottom: 86px;
 }
 
 .contacts h2 {
@@ -987,6 +1041,10 @@ header {
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;
+}
+
+.contacts p {
+    margin-bottom: 35px;
 }
 
 .contacts img {
@@ -998,11 +1056,22 @@ header {
     font-family: Cuprum, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
+    font-weight: normal;
     color: #ffffff;
-
     background-color: #ee3643;
-    border: none;
     outline: none;
+    cursor: help;
+
+    width: 300px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 2px;
+    display: block;
+    border: none;
+
+    margin-top: 40px;
+
 }
 
 /*footer*/
@@ -1589,16 +1658,14 @@ legend {
     display: flex;
     flex-direction: column;
 
-    margin-right: 10px;
-    margin-left: 80px;
+
 }
 
 .modal-contact-appointment-email {
     display: flex;
     flex-direction: column;
 
-    margin-left: 10px;
-    margin-right: 80px;
+
 }
 
 .contact-name,
