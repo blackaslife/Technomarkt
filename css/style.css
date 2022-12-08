@@ -643,6 +643,8 @@ header {
     padding: 0;
 }
 
+
+
 /*cut img with out border*/
 .popular-goods-item,
 .items-goods {
@@ -653,6 +655,18 @@ header {
     margin-bottom: 20px;
 }
 
+.popular-goods-item img {
+    width: 100%;
+    height: auto;
+}
+
+.container-img-new {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 60px;
+    height: 60px;
+}
 
 .img-new {
     position: absolute;
@@ -1361,6 +1375,11 @@ legend {
 .catalog-items-goods {
     list-style: none;
     margin: 0px;
+}
+
+.catalog-items-goods img {
+    max-width: 100%;
+    height: auto;
 }
 
 .catalog-items-goods-navigation ul {
