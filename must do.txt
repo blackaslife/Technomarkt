@@ -1,0 +1,3 @@
+1 change img
+2 write new style for img
+3 pop-up at catalog

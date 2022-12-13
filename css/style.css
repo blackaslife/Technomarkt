@@ -1605,7 +1605,7 @@ legend {
 
     background-color: #fff;
     box-shadow: 0 0 40px rgba(0,1,1,0.75);
-    border-top-width: 8px;
+    border-top-width: 7px;
     border-top-style: solid;
     border-top-color: #ee3643;
 }
@@ -1622,6 +1622,96 @@ legend {
     width: 940px;
     height: 446px;
     box-shadow: 0 0 16px rgba(35,31,32,0.5);
+
+}
+
+.modal-add-items {
+    position: absolute;
+    top: 411px;
+    left: 19%;
+
+    width: 620px;
+    height: 275px;
+
+    background-color: #f1f1f1;
+    border-top-width: 7px;
+    border-top-style: solid;
+    border-top-color: #ee3643;
+    box-shadow: 0 20px 40px rgba(41,52,73,0.75);
+}
+
+.modal-add-items div {
+    height: 163px;
+    width: 100%;
+    background-color: #fff;
+
+}
+
+.modal-add-items p {
+    margin: 0;
+    position: absolute;
+    top: 66px;
+    left: 179px;
+
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+
+
+}
+
+.modal-add-items img {
+    position: absolute;
+    top: 48px;
+    left: 80px;
+}
+
+.modal-add-items a {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+
+    background-color: #ee3643;
+
+    width: 220px;
+
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    border-radius: 2px;
+    display: block;
+
+    position: absolute;
+    top: 200px;
+    left: 80px;
+
+}
+
+.modal-add-items-btn {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000;
+    background-color: #fff;
+
+    position: absolute;
+    top: 200px;
+    left: 320px;
+
+    width: 220px;
+
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    border: none;
+    border-radius: 2px;
+    display: block;
+    cursor: pointer;
+
 
 }
 
@@ -1646,8 +1736,8 @@ legend {
     top: 9px;
     left: 2px;
 
-    width: 19px;
-    height: 3px;
+    width: 26px;
+    height: 5px;
     background-color: #ee3643;
     border-radius: 1px;
     
