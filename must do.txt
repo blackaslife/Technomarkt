@@ -1,3 +1,5 @@
 1 change img
 2 write new style for img
 3 pop-up at catalog
+4 finished catalog
+5 change pop-up from section to div

@@ -531,17 +531,23 @@ header {
 
 .catalog-slider {
     position: relative;
-    
+    height: 266px;
+    background-color: #34425a;
+}
+
+.catalog-slider input[type="radio"] {
+    display: none;
 }
 
 .catalog-list .catalog-tools-drill,
 .catalog-list .catalog-tools-perforators {
     width: 620px;
+    display: none;
 }
 
 .catalog-tools-drill {
     background-color: #685c53;
-    /*background-image: url("../img/slider 2.jpg");*/
+    background-image: url("../img/slider 2.jpg");
     background-repeat: no-repeat;
 
     position: absolute;
@@ -549,26 +555,60 @@ header {
     left: 0;
 
     width: 620px;
-    height: 100%;
+    height: 266px;
+
 }
 
 
 
 .catalog-tools-perforators {
     background-color: #8f8985;
-    /*background-image: url("../img/slider 1.jpg");*/
+    background-image: url("../img/slider 1.jpg");
     background-repeat: no-repeat;
 
     position: absolute;
-    z-index: -1;
     top: 0;
     left: 0;
 
     width: 620px;
-    height: 100%;
+    height: 266px;
+
 }
 
-.catalog-tools-btn-left {
+.slider-controls {
+    position: absolute;
+    top: 220px;
+    left: 294px;
+    z-index: 20;
+
+    font-size: 0;
+
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#btn-1:checked ~ .catalog-tools-drill,
+#btn-2:checked ~ .catalog-tools-perforators {
+    display: block;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+    background-color: #ee3643;
+}
+
+
+/* .catalog-tools-btn-left {
     position: absolute;
     left: 25px;
     top: 114px;
@@ -591,7 +631,7 @@ header {
     position: absolute;
     right: 290px;
     top: 220px;
-}
+} */
 
 
 /*section class="popular-goods"*/
