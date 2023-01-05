@@ -1338,7 +1338,15 @@ footer {
 .catalog-filter-brands-list,
 .catalog-filter-power-supply {
     list-style: none;
+
 }
+
+.catalog-filter-brands-list li,
+.catalog-filter-power-supply li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
 
 legend {
     font-size: 17px;
@@ -1350,6 +1358,9 @@ legend {
     font-size: 15px;
     line-height: 20px;
     font-weight: normal;
+    cursor: pointer;
+
+    position: relative;
 }
 
 .filter-form-btn {
@@ -1357,6 +1368,31 @@ legend {
 
     border: 2px solid lightgrey ;
 }
+
+.catalog-filter-brands-list input {
+    display: none;
+}
+
+.checkbox-indicator {
+    width: 19px;
+    height: 19px;
+
+    border: 2px solid #c1c1c1;
+    border-radius: 4px;
+
+    position: absolute;
+    top: -2px;
+    left: -30px;
+
+}
+
+.filter-brands input[type="checkbox"]:checked + .checkbox-indicator {
+    background-image: url(../img/checkbox-on.png);
+
+    width: 27px;
+    height: 23px;
+    border: none;
+} 
 
 /*catalog items*/
 
