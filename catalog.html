@@ -79,14 +79,21 @@
                 <form action="htttps://echo.htmlacademy.ru" method="get">
                     <fieldset>
                         <!--Закончить форму-->
-                        <legend>ЦЕНА:</legend>
-                        <p class="range-value"><input  type="range" name="price" id=""></p>
-                        <label for=""><input class="range-value" type="text" value="0"></label>
-                        <span>-</span>
-                        <label for=""><input class="range-value" type="text" value="30000"></label>
+                        <legend class="catalog-filter-price">ЦЕНА:</legend>
+                        <div class="range-controls">
+                            <div class="range"><div class="scale" style="width: 160px;"></div></div>
+                            <div class="toggle min-toggle"></div>
+                            <div class="toggle max-toggle"></div>
+                        </div>
+                        <div class="price-controls">
+                            <label for=""><input class="range-value" type="text" value="0"></label>
+                            <span>-</span>
+                            <label for=""><input class="range-value" type="text" value="30000"></label>
+                        </div>
                     </fieldset>
+                    <div class="catalog-filter-dividing"></div>
                     <fieldset>
-                        <legend>ПРОИЗВОДИТЕЛИ:</legend>
+                        <legend class="catalog-filter-brands">ПРОИЗВОДИТЕЛИ:</legend>
                         <ul class="catalog-filter-brands-list">
                             <li><label class="filter-brands"><input type="checkbox" name="BOSCH"><span class="checkbox-indicator"></span>BOSCH</label>
                             </li>
@@ -104,8 +111,9 @@
                             </li>
                         </ul>    
                     </fieldset>
+                    <div class="catalog-filter-dividing"></div>
                     <fieldset>
-                        <legend>ПИТАНИЕ:</legend>
+                        <legend class="catalog-filter-power">ПИТАНИЕ:</legend>
                         <ul class="catalog-filter-power-supply">
                             <li><label class="filter-power"><input type="radio" name="power-group" value="battery"><span class="radio-indicator"></span> АККУМУЛЯТОРНЫЕ</label></li>
                             <li><label class="filter-power"><input type="radio" name="power-group" value="network"><span class="radio-indicator"></span> СЕТЕВЫЕ</label></li>
