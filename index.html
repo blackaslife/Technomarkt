@@ -337,5 +337,14 @@
         </form>
         <button class="modal-close" type="button">Close</button>
     </section>
+    <script>
+        const link = document.querySelector(".contacts button");
+        const popup = document.querySelector(".modal-contact");
+
+        link.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.remove("visually-hidden");
+        });
+    </script>
 </body>
 </html>
