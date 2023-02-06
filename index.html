@@ -340,10 +340,18 @@
     <script>
         const link = document.querySelector(".contacts button");
         const popup = document.querySelector(".modal-contact");
+        const close = document.querySelector(".modal-contact .modal-close");
+        const username = popup.querySelector("[name=name]");
 
         link.addEventListener("click", function (evt) {
             evt.preventDefault();
             popup.classList.remove("visually-hidden");
+            username.focus();
+        });
+
+        close.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.add("visually-hidden");
         });
     </script>
 </body>
