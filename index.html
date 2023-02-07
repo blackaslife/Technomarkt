@@ -318,7 +318,7 @@
     </section>
     <!--coordinates for modal-->
     <!--position: fixed;      -->
-    <!--add overlay with fixed and z-index: 10;     -->
+    <!-- add overlay with fixed and z-index: 10;     -->
     <section class="modal modal-contact visually-hidden">
         <form action="https://echo.htmlacademy.ru" method="POST">
             <p class="modal-contact-appointment-name">
@@ -340,8 +340,10 @@
     <script>
         const link = document.querySelector(".contacts button");
         const popup = document.querySelector(".modal-contact");
+        const form = popup.querySelector("form");
         const close = document.querySelector(".modal-contact .modal-close");
         const username = popup.querySelector("[name=name]");
+        const useremail = popup.querySelector("[name=email]");
 
         link.addEventListener("click", function (evt) {
             evt.preventDefault();
@@ -352,6 +354,13 @@
         close.addEventListener("click", function (evt) {
             evt.preventDefault();
             popup.classList.add("visually-hidden");
+        });
+
+        form.addEventListener("submit", function (evt) {
+            if(!username.value || !useremail.value) {
+            evt.preventDefault();
+            console.log("wtf");
+            }
         });
     </script>
 </body>
