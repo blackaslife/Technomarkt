@@ -357,15 +357,20 @@
         link.addEventListener("click", function (evt) {
             evt.preventDefault();
             popup.classList.remove("visually-hidden");
-            username.focus();
+            popup.classList.add("modal-animation");
+
             if (storage) {
                 username.value = storage;
+                useremail.focus();
+            } else {
+              username.focus();             
             }
         });
 
         close.addEventListener("click", function (evt) {
             evt.preventDefault();
             popup.classList.add("visually-hidden");
+            popup.classList.remove("modal-animation");
         });
 
         form.addEventListener("submit", function (evt) {
@@ -383,8 +388,10 @@
             if (evt.keyCode === 27) {
                     evt.preventDefault();
                     popup.classList.add("visually-hidden");
+                    popup.classList.remove("modal-animation");
             }
         });
+        // fix animation for (Y) modal!!
     </script>
 </body>
 </html>

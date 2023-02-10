@@ -1831,10 +1831,17 @@ legend {
 
 /* style for modals windows */
 
+@keyframes bounce {
+    0% { transform: translate(-1000px, -50%);}
+    80% { transform: translate(-40%, -50%);}
+    100% { transform: translate(-50%, -50%);}
+}
+
 .modal-contact {
-    position: absolute;
-    top: 2000px;
-    left: 25%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     font-family: Cuprum, Arial, sans-serif;
     font-size: 18px;
@@ -1849,6 +1856,11 @@ legend {
     border-top-width: 7px;
     border-top-style: solid;
     border-top-color: #ee3643;
+}
+
+.modal-animation {
+    animation-name: bounce;
+    animation-duration: 0.5s;
 }
 
 .modal-contact p {
