@@ -345,10 +345,22 @@
         const username = popup.querySelector("[name=name]");
         const useremail = popup.querySelector("[name=email]");
 
+        let isStorageSupport = true;
+        let storage = "";
+
+        try {
+            storage = localStorage.getItem("username");
+        } catch (err) {
+            isStorageSupport = false;
+        }
+
         link.addEventListener("click", function (evt) {
             evt.preventDefault();
             popup.classList.remove("visually-hidden");
             username.focus();
+            if (storage) {
+                username.value = storage;
+            }
         });
 
         close.addEventListener("click", function (evt) {
@@ -360,6 +372,17 @@
             if(!username.value || !useremail.value) {
             evt.preventDefault();
             console.log("wtf");
+            } else {
+                if(isStorageSupport) {
+                localStorage.setItem("username", username.value);                    
+                }
+            }
+        });
+
+        window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+                    evt.preventDefault();
+                    popup.classList.add("visually-hidden");
             }
         });
     </script>
