@@ -1837,6 +1837,12 @@ legend {
     100% { transform: translate(-50%, -50%);}
 }
 
+@keyframes shake {
+    0%, 100% { transform: translate(-50%, -50%);}
+    10%, 30%, 50%, 70%, 90% { transform: translate(-50%, -51%);}
+    20%, 40%, 60%, 80% { transform: translate(-50%, -49%);}
+}
+
 .modal-contact {
     position: fixed;
     top: 50%;
@@ -1861,6 +1867,11 @@ legend {
 .modal-animation {
     animation-name: bounce;
     animation-duration: 0.5s;
+}
+
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.4s;
 }
 
 .modal-contact p {
