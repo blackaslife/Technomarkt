@@ -1866,12 +1866,12 @@ legend {
 
 .modal-animation {
     animation-name: bounce;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
 }
 
 .modal-error {
     animation-name: shake;
-    animation-duration: 0.4s;
+    animation-duration: 0.3s;
 }
 
 .modal-contact p {
@@ -1879,9 +1879,10 @@ legend {
 }
 
 .modal-map {
-    position: absolute;
-    top: 2200px;
-    left: 19%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     width: 940px;
     height: 446px;

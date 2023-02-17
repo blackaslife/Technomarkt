@@ -4,6 +4,9 @@ const form = popup.querySelector("form");
 const close = document.querySelector(".modal-contact .modal-close");
 const username = popup.querySelector("[name=name]");
 const useremail = popup.querySelector("[name=email]");
+const mapLink = document.querySelector(".contacts img");
+const mapPopup = document.querySelector(".modal-map");
+const mapClose = mapPopup.querySelector(".modal-close");
 
 let isStorageSupport = true;
 let storage = "";
@@ -51,7 +54,21 @@ window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
             evt.preventDefault();
             popup.classList.add("visually-hidden");
+            mapPopup.classList.add("visually-hidden");
             popup.classList.remove("modal-animation");
             popup.classList.remove("modal-error");
+            mapPopup.classList.remove("modal-animation");
     }
+});
+
+mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("visually-hidden");
+    mapPopup.classList.add("modal-animation");
+});
+
+mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("visually-hidden");
+    mapPopup.classList.remove("modal-animation");
 });
