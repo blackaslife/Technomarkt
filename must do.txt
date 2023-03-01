@@ -3,3 +3,7 @@
 3 pop-up at catalog
 4 finished catalog
 5 change pop-up from section to div
+6 end services on js
+7 end slider on css
+8 center icons in header
+9 change site developed
