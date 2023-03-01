@@ -56,6 +56,7 @@ header {
     font-size: 24px;
     line-height: 24px;
     font-weight: normal;
+    text-transform: uppercase;
     width: 120px;
     padding: 12px 50px;
     background-color: #ee3643;
@@ -93,7 +94,7 @@ header {
     display: block;
     color: #000;
     width: 270px;
-    padding-top: 13px;
+    padding-top: 14px;
     padding-right: 30px;
     padding-bottom: 15px;
     padding-left: 48px;
@@ -106,6 +107,13 @@ header {
 
 .main-navigation-search input::placeholder {
     color: #fff;
+}
+
+.main-navigation-search input:focus {
+    background-color: #ffffff;
+    outline-style: none;
+    /* change img on red 
+    background: url();*/
 }
 
 .main-navigation-focus a {
@@ -136,7 +144,7 @@ header {
 .buy-navigation a{
     display: block;
     width: 110px;
-    padding-top: 15px;
+    padding-top: 16px;
     padding-right: 20px;
     padding-bottom: 15px;
     padding-left: 20px;
@@ -260,23 +268,36 @@ header {
     font-size: 17px;
     line-height: 17px;
     font-weight: normal;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin: 0 0 60px;
+    padding: 0;
+    width: 100%;
 
     list-style: none;
   
 }
 
-/* Border for .site-navigation-bar a, and Del for .site-navigation-bar */
+.site-navigation-bar li {
 
-
+    display: flex;
+    width: 135px;
+}
 
 .site-navigation-bar a {
+    display: block; 
     color: #ffffff;
     padding-top: 20px;
     padding-bottom: 25px;
-    padding-right: 30px;
-    padding-left: 30px;
-    display: block;
+    /* padding-right: 30px;
+    padding-left: 30px; */
+    width: 100%;
+    text-align: center;
+    
     border-bottom-style: solid;
     border-bottom-width: 5px;
     border-bottom-color: #293449;
@@ -285,6 +306,7 @@ header {
 
 .site-navigation-bar .bar-left {
     padding-left: 55px;
+
 }
 
 .site-navigation-bar .bar-right {
@@ -1745,13 +1767,6 @@ legend {
     right: 10px;
 }
 
-.site-navigation-bar {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 0 0 60px;
-    padding: 0;
-}
 
 /* flex for main */
 
