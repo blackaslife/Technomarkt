@@ -100,7 +100,7 @@ header {
     padding-left: 48px;
     border: none;
     background-color: #293449;
-    background: url(../img/icon-search.svg) no-repeat;
+    background: url(../img/icon-search.svg.png) no-repeat;
     background-position: left 17px top 14px;
     
 }
@@ -113,7 +113,9 @@ header {
     background-color: #ffffff;
     outline-style: none;
     /* change img on red 
-    background: url();*/
+    background: url();
+    background-image: url(../img/icon-search-focus.svg.png) no-repeat;
+    background-position: left 17px top 14px;*/
 }
 
 .main-navigation-focus a {
@@ -128,6 +130,23 @@ header {
 .main-navigation-focus img {
     vertical-align: text-top;
     margin-right: 11px;
+}
+
+.bookmark-img {
+    padding-top: 1px;
+    opacity: 0.3;
+}
+
+.bookmark-img:hover {
+    opacity: 1;
+}
+
+.basket-img {
+    opacity: 0.3;
+}
+
+.basket-img:hover {
+    opacity: 1;
 }
 
 .main-navigation-bar li {
@@ -748,6 +767,7 @@ header {
     line-height: 18px;
     text-transform: uppercase;
     color: #fff;
+    width: 135px;
     background-color: #63a63e;
     border: 3px solid #63a63e;
     border-radius: 3px;
@@ -776,6 +796,7 @@ header {
     line-height: 18px;
     text-transform: uppercase;
     color: #32425c;
+    width: 135px;
     background-color: #fff;
     padding: 11px 29px 9px 33px;
     border: 3px solid #63a63e;
