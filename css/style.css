@@ -1159,7 +1159,6 @@ header {
     font-weight: normal;
     color: #ffffff;
     background-color: #ee3643;
-    outline: none;
     cursor: help;
 
     width: 300px;
@@ -1171,7 +1170,7 @@ header {
     border: none;
 
     margin-top: 40px;
-    overline: black
+    
 
 }
 
