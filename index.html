@@ -325,13 +325,15 @@
             </p>
             <p class="modal-contact-appointment-text">
                 <label class="label-text" for="appointment-text">Text of the letter</label>
-                <input class="contact-text" type="text" id="appointment-text" name="text" value="" placeholder="In free form">
+                <textarea class="contact-text" name="text" id="appointment-text" placeholder="Write to us"></textarea>
             </p>
             <button class="modal-btn" type="submit">SEND</button>
         </form>
+        <div class="modal-btn-background">
+        </div>
         <button class="modal-close" type="button">Close</button>
     </section>
-    <section class="modal modal-login">
+    <section class="modal modal-login visually-hidden">
         <form action="https://acho.htmlacademy.ru" method="post">
             <p class="modal-login-appointment-name">
                 <label class="label-name" for="login-name">Your login:</label>
@@ -347,8 +349,10 @@
                 <span class="label-checkbox-indicator"></span>
                 </label>
             </p>
-            <button class="modal-btn" type="submit">LOGIN</button>
+            <button class="modal-btn modal-login-btn" type="submit">LOGIN</button>
         </form>
+        <div class="modal-btn-background">
+        </div>
         <button class="modal-close" type="button">Close</button>
     </section>
     <script src="js/script.js"></script>
