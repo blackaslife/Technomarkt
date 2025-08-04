@@ -8,6 +8,9 @@ const mapLink = document.querySelector(".contacts img");
 const mapPopup = document.querySelector(".modal-map");
 const mapClose = mapPopup.querySelector(".modal-close");
 
+const loginLink = document.querySelector(".enter-navigation-login")
+const loginPopup = document.querySelector("modal-login");
+
 let isStorageSupport = true;
 let storage = "";
 
