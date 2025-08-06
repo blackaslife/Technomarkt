@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <header class="main-header">
+    <header class="main-header">
         <nav class="main-navigation">
             <div class="conteiner">
                 <ul class="main-navigation-bar">
                     <li class="main-navigation-logo"><a href="index.html">Technomart</a></li>
                     <li class="main-navigation-search"><Form>
-                        <input type="search" name="q" placeholder="Search">
+                        <input type="search" name="q" placeholder="Поиск">
                     </Form></li>
-                    <li class="main-navigation-focus"><a href="#"><img class="bookmark-img" src="img/icon-bookmark1.png" alt="Wish list">Wish list: 0</a></li>
-                    <li class="main-navigation-focus"><a href="#"><img class="basket-img" src="img/cart-icon.svg.png" alt="Basket">Basket: 0</a></li>
+                    <li class="main-navigation-focus"><a href="#"><img class="bookmark-img" src="img/icon-bookmark1.png" alt="Закладки">Wish list: 0</a></li>
+                    <li class="main-navigation-focus"><a href="#"><img class="basket-img" src="img/cart-icon.svg.png" alt="Корзина">Basket: 10</a></li>
                     <li class="buy-navigation"><a href="#">Checkout</a></li>
                 </ul>
             </div>
@@ -31,20 +31,27 @@
                 <p class="site-tel"><a href="tel:+78125550555"><img src="img/icon-phone.svg" alt="Phone">+7(812) 555-05-55</a></p>
                 <p class="site-adres">m. Poznań, ul. Gołębia 3</p>
             </div>
-            <ul class="enter-navigation">
-                <li><a class="enter-navigation-login" href="#"><img class="enter-img" src="img/icon-login.svg" alt="Login">Login</a></li>
-                <li><a class="enter-navigation-registration" href="#">Register</a></li>
-            </ul>
-        </div>
+            <div class="enter-account">
+                <a class="enter-user" href="#">
+                    <img class="enter-user-icon" src="img/icon-user.svg" alt="Пользоватиель">Wojciech Szczęsny
+                    <img class="enter-user-logout" src="img/icon-logout.svg" alt="Выйти">
+                </a>
+                <div class="enter-account-option">
+                    <a class="enter-options" href="#">My orders</a>
+                    <img class="enter-option-img" src="img/Shape 1 copy.svg" alt="icon">
+                    <a class="enter-options" href="#">Personal account</a>
+                </div>
+            </div>
+        </div>    
             <nav class="site-navigation conteiner">
             <ul class="site-navigation-bar">
-                <li><a href="index.html">Home</a></li><!-- class="bar-left"  -->
-                <li><a href="#">Company</a></li>
+                <li><a href="index.html">Home</a></li><!--  class="bar-left" -->
+                <li><a href="company.html">Company</a></li>
                 <li><a href="catalog.html">Catalog</a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="#">Special offers</a></li>
                 <li><a href="#">Delivery</a></li>
-                <li><a href="#">Contacts</a></li><!-- class="bar-right"  -->
+                <li><a href="#">Contacts</a></li> <!-- class="bar-right" -->
             </ul>
             </nav>
         
@@ -52,20 +59,21 @@
     <main>
 
     </main>
-        <footer class="main-footer">
+    <footer class="main-footer">
         <div class="main-footer-top">
             <div class="flex-for-footer-top conteiner">
                 <div class="flex-for-left-top">
+                    <!--<img src="img/" alt="Логотип сайта «Техномаркт»">-->
                     <div class="main-navigation-logo">
                         <a href="index.html">Technomart</a>
                     </div>
                     <p>m. Poznań, ul. Gołębia 3<br>
                     +7 (812) 555-05-55</p>
-                </div>  
-                <div class="flex-for-right-top"> 
+                </div>
+                <div class="flex-for-right-top">
                     <nav class="main-footer-navigation">
                         <ul class="main-footer-navigation-first-list">
-                            <li><a class="footer-first-list-link" href="#">Company</a></li>
+                            <li><a class="footer-first-list-link" href="company.html">Company</a></li>
                             <li><a class="footer-first-list-link" href="#">News</a></li>
                             <li><a class="footer-first-list-link" href="catalog.html">Catalog</a></li>
                             <li><a class="footer-first-list-link" href="#">Delivery</a></li>
@@ -89,6 +97,7 @@
                 </p>
                 <ul class="social-list">
                     <li>
+                        <!-- change icon from vk to youtube -->
                         <a class="social-button" href="#">
                             <img src="img/vk-icon.svg" alt="vk">
                             <span class="visually-hidden">vk</span>
