@@ -774,6 +774,7 @@ header {
     border-bottom-color: #518534;
     padding: 11px 42px 11px 46px;
     margin: 45px 43px 7px 42px;
+    cursor: pointer;
 
 }
 
@@ -802,6 +803,7 @@ header {
     border: 3px solid #63a63e;
     border-radius: 3px;
     margin-bottom: 16px;
+    cursor: pointer;
 }
 
 .btn-bookmarks:hover {
@@ -854,6 +856,7 @@ header {
     /*background-color: linear-gradient(0deg, blue, green 40%, red);*/
     
     text-align: center;
+    cursor: pointer;
 }
 
 /*section popular-brands*/
