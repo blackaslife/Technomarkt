@@ -1192,6 +1192,7 @@ footer {
     line-height: 24px;
     font-weight: normal;
     color: #f3f7f9;
+    background-color: #32425c;
 
 
    
@@ -1199,7 +1200,6 @@ footer {
 
 .flex-for-footer-top {
     display: flex;
-    background-color: #32425c;
     
 }
 
@@ -1265,6 +1265,7 @@ footer {
     line-height: 18px;
     font-weight: normal;
     color: #ffffff;
+    background-color: #293449;
 
 
 
@@ -1274,7 +1275,6 @@ footer {
     display: flex;
     /* delete space-between */
     justify-content: space-between;
-    background-color: #293449;
 }
 
 .social-list {
