@@ -2280,3 +2280,43 @@ legend {
 .modal-registration-btn {
     top: 42vh;
 }
+
+/* styles for company.html */
+
+.text-style {
+    font-family: PT Sans, Arial, sans-serif;
+    font-size:13px;
+    line-height: 20px;
+    font-weight: normal;
+
+}
+
+.company-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.company-page h2 {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #32425c;
+
+    margin-top: 20px;
+}
+
+/* style for special-offers.html */
+
+.special-offers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.special-offers-discount,
+.special-offers-code {
+    max-width: 40%;
+    margin: 20px;
+}
