@@ -650,10 +650,15 @@ header {
 }
 
 
-/* .catalog-tools-btn-left {
+.catalog-tools-btn-left {
     position: absolute;
     left: 25px;
     top: 114px;
+    background-color: transparent;
+    padding: 0;
+    border-style: none;
+    cursor: pointer;
+    z-index: 1;
 
 }
 
@@ -661,9 +666,14 @@ header {
     position: absolute;
     right: 20px;
     top: 114px;
+    background-color: transparent;
+    padding: 0;
+    border-style: none;
+    cursor: pointer;
+    z-index: 1;
 }
 
-.catalog-tools-slider-left {
+/* .catalog-tools-slider-left {
     position: absolute;
     left: 290px;
     top: 220px;
@@ -673,7 +683,8 @@ header {
     position: absolute;
     right: 290px;
     top: 220px;
-} */
+} 
+    */
 
 
 /*section class="popular-goods"*/
