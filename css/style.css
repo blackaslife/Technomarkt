@@ -2305,12 +2305,15 @@ legend {
 .company-page {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .company-page h2 {
     font-family: Cuprum, Arial, sans-serif;
     font-size: 30px;
-    line-height: 30px;
+    line-height: 32px;
     font-weight: normal;
     color: #32425c;
 
@@ -2330,4 +2333,28 @@ legend {
 .special-offers-code {
     max-width: 40%;
     margin: 20px;
+}
+
+/* style for news.html */
+
+.news-list-onwebsite {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.news-list-ourlife {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+}
+
+.news-list-blog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
 }
