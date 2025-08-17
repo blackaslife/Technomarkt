@@ -2319,6 +2319,10 @@ legend {
     margin-top: 20px;
 }
 
+.company-page section {
+    padding: 0 10px 0 10px;
+}
+
 /* style for special-offers.html */
 
 .special-offers {
@@ -2328,10 +2332,16 @@ legend {
     justify-content: space-around;
 }
 
+
+
 .special-offers-discount,
 .special-offers-code {
     max-width: 40%;
     margin: 20px;
+    padding: 0 10px 0 10px;
+    background-color: #f3f7f9;
+    border:#000 3px solid;
+    border-radius: 5px;
 }
 
 /* style for news.html */
@@ -2356,4 +2366,11 @@ legend {
     flex-wrap: nowrap;
     justify-content: space-between;
     
+}
+
+/* style for contact.html */
+
+.company-contact {
+    margin-bottom: 25px;
+
 }
