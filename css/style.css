@@ -1736,7 +1736,7 @@ legend {
 
 }
 
-.conteiner {
+.container {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
@@ -2306,8 +2306,7 @@ legend {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-bottom: 25px;
 }
 
 .company-page h2 {
