@@ -26,6 +26,10 @@ a {
     overflow: hidden;
 }
 
+.content-hidden {
+    display: none;
+}
+
 header {
     background-color: #f3f7f9;
 }
@@ -2350,22 +2354,43 @@ legend {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .news-list-ourlife {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:space-between;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-bottom: 20px;
 }
 
 .news-list-blog {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+
+.onwebsite-slider-left,
+.onwebsite-slider-right {
+    width: 48%;
+    background-color: cornflowerblue;
+}
+
+.ourlife-slider-left,
+.ourlife-slider-right {
+    width: 48%;
+    background-color: chocolate;
+}
+
+.blog-slider-left,
+.blog-slider-right {
+    width: 48%;
+    background-color: lightcoral;
 }
 
 /* style for contact.html */
