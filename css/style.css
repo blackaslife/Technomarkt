@@ -2377,9 +2377,104 @@ legend {
 
 .onwebsite-slider-left,
 .onwebsite-slider-right {
+    position: relative;
     width: 48%;
     background-color: cornflowerblue;
 }
+
+/* !!!уніфікувати клас!!! */
+
+.slider-button {
+    width: 50px;
+    height: 50px;
+
+    font-size: 0;
+    background-color: yellow;
+    border: 0;
+    cursor: pointer;
+}
+
+.slider-button-left {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+
+.slider-button-left::before,
+.slider-button-left::after {
+    content: "";
+
+    width: 26px;
+    height: 5px;
+    background-color: #ee3643;
+    border-radius: 2px;
+
+}
+
+/* !!!уніфікувати клас!!! */
+
+.slider-button-left::before {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 15px;
+    right: 14px;
+
+}
+
+/* !!!уніфікувати клас!!! */
+
+.slider-button-left::after {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 30px;
+    right: 14px;
+
+}
+
+
+
+
+.slider-button-right {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+}
+
+/* !!!уніфікувати клас!!! */
+
+
+.slider-button-right::before,
+.slider-button-right::after {
+    content: "";
+
+    width: 26px;
+    height: 5px;
+    background-color: #ee3643;
+    border-radius: 2px;
+
+}
+
+/* !!!уніфікувати клас!!! */
+
+.slider-button-right::before {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 15px;
+    left: 12px;
+
+}
+
+/* !!!уніфікувати клас!!! */
+
+.slider-button-right::after {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 30px;
+    left: 12px;
+
+}
+
+
 
 .ourlife-slider-left,
 .ourlife-slider-right {
