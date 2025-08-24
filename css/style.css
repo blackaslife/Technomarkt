@@ -2350,6 +2350,11 @@ legend {
 
 /* style for news.html */
 
+.news-item {
+    width: 100%;
+    height: 200px;
+}
+
 .news-list-onwebsite {
     display: flex;
     flex-direction: row;
@@ -2379,10 +2384,9 @@ legend {
 .onwebsite-slider-right {
     position: relative;
     width: 48%;
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
 }
 
-/* !!!уніфікувати клас!!! */
 
 .slider-button {
     width: 50px;
@@ -2411,7 +2415,6 @@ legend {
 
 }
 
-/* !!!уніфікувати клас!!! */
 
 .slider-button-left::before {
     transform: rotate(-45deg);
@@ -2421,7 +2424,6 @@ legend {
 
 }
 
-/* !!!уніфікувати клас!!! */
 
 .slider-button-left::after {
     transform: rotate(45deg);
@@ -2440,7 +2442,6 @@ legend {
     right: 10px;
 }
 
-/* !!!уніфікувати клас!!! */
 
 
 .slider-button-right::before,
@@ -2454,7 +2455,6 @@ legend {
 
 }
 
-/* !!!уніфікувати клас!!! */
 
 .slider-button-right::before {
     transform: rotate(45deg);
@@ -2464,7 +2464,6 @@ legend {
 
 }
 
-/* !!!уніфікувати клас!!! */
 
 .slider-button-right::after {
     transform: rotate(-45deg);
@@ -2476,14 +2475,44 @@ legend {
 
 
 
+.news-onwebsite-arrivals {
+    background-color: #34425a;
+    background: url('../img/news-onwebsite-arrivals.webp');
+    background-size: cover;
+
+}
+
+.news-onwebsite-powertools {
+    background-color: #34425a;
+    background: url('../img/news-onwebsite-powertools.webp');
+    background-size: cover;
+
+
+}
+
+.news-onwebsite-feedback {
+    background-color: #34425a;
+    background: url('../img/news-onwebsite-feedback.webp');
+    background-size: cover;
+    
+}
+
+.news-onwebsite-summersale {
+    background-color: #34425a;
+    background: url('../img/news-onwebsite-summersale.webp');
+    background-size: cover;
+}
+
 .ourlife-slider-left,
 .ourlife-slider-right {
+    position: relative;
     width: 48%;
     background-color: chocolate;
 }
 
 .blog-slider-left,
 .blog-slider-right {
+    position: relative;
     width: 48%;
     background-color: lightcoral;
 }
