@@ -2355,10 +2355,14 @@ legend {
     height: 200px;
 }
 
+.news-item-title {
+    margin: 0;
+}
+
 .news-list-onwebsite {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 20px;
 }
@@ -2384,7 +2388,6 @@ legend {
 .onwebsite-slider-right {
     position: relative;
     width: 48%;
-    /* background-color: cornflowerblue; */
 }
 
 
@@ -2507,8 +2510,33 @@ legend {
 .ourlife-slider-right {
     position: relative;
     width: 48%;
-    background-color: chocolate;
 }
+
+.news-ourlife-workshop {
+    background-color: #34425a;
+    background: url('../img/news-ourlife-workshop.webp');
+    background-size: cover;
+}
+
+.news-ourlife-newstore {
+    background-color: #34425a;
+    background: url('../img/news-ourlife-newstore.webp');
+    background-size: cover;
+} 
+
+.news-ourlife-appreciation {
+    background-color: #34425a;
+    background: url('../img/news-ourlife-appreciation.webp');
+    background-size: cover;
+}
+
+.news-ourlife-suppliers {
+    background-color: #34425a;
+    background: url('../img/news-ourlife-suppliers.webp');
+    background-size: cover;
+}
+
+
 
 .blog-slider-left,
 .blog-slider-right {
