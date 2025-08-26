@@ -2542,7 +2542,30 @@ legend {
 .blog-slider-right {
     position: relative;
     width: 48%;
-    background-color: lightcoral;
+}
+
+.news-blog-improvements {
+    background-color: #34425a;
+    background: url('../img/news-blog-improvements.webp');
+    background-size: cover;
+}
+
+.news-blog-top10 {
+    background-color: #34425a;
+    background: url('../img/news-blog-top10.webp');
+    background-size: cover;
+}
+
+.news-blog-sustainable {
+    background-color: #34425a;
+    background: url('../img/news-blog-sustainable.webp');
+    background-size: cover;
+}
+
+.news-blog-renovation {
+    background-color: #34425a;
+    background: url('../img/news-blog-renovation.webp');
+    background-size: cover;
 }
 
 /* style for contact.html */
