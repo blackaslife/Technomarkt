@@ -2396,7 +2396,7 @@ legend {
     height: 50px;
 
     font-size: 0;
-    background-color: yellow;
+    background-color: transparent;
     border: 0;
     cursor: pointer;
 }
