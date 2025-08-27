@@ -2350,6 +2350,29 @@ legend {
 
 /* style for news.html */
 
+.news-title {
+    display:flex;
+    justify-content: center;
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #32425c;
+    text-transform: uppercase;
+
+}
+
+.news-title::before,
+.news-title::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #ee3643;
+    margin: 0 20px 3px 20px;
+    align-self: center;
+}
+
+
 .news-item {
     width: 100%;
     height: 200px;
