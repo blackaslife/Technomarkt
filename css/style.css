@@ -2348,6 +2348,16 @@ legend {
     border-radius: 5px;
 }
 
+.special-offers-discount {
+    background-image: url('../img/special-offers-discount.webp');
+    background-size: cover;
+}
+
+.special-offers-code {
+    background-image: url('../img/special-offers-code.webp');
+    background-size: cover;
+}
+
 /* style for news.html */
 
 .news-title {
