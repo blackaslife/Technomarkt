@@ -2340,12 +2340,30 @@ legend {
 
 .special-offers-discount,
 .special-offers-code {
+    position: relative;
     max-width: 40%;
     margin: 20px;
     padding: 0 10px 0 10px;
     background-color: #f3f7f9;
     border:#000 3px solid;
     border-radius: 5px;
+    color: #ffffff;
+
+}
+
+.special-offers-discount::before,
+.special-offers-code::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color:rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.special-offers-discount *,
+.special-offers-code * {
+    position: relative;
+    z-index: 1;
 }
 
 .special-offers-discount {
