@@ -2390,6 +2390,7 @@ legend {
 
 }
 
+
 .news-title::before,
 .news-title::after {
     content: "";
@@ -2402,10 +2403,27 @@ legend {
 
 
 .news-item {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 100%;
     height: 200px;
     color: #ffffff;
+}
+
+.news-item p:first-of-type {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+
+.news-item-date,
+.news-item-content {
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+    
 }
 
 .news-item::before {
