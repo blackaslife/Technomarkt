@@ -2423,7 +2423,14 @@ legend {
     font-size: 13px;
     line-height: 20px;
     font-weight: normal;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
     
+}
+
+.news-item-content {
+    padding-bottom: 10px;
 }
 
 .news-item::before {
@@ -2441,6 +2448,8 @@ legend {
 
 .news-item-title {
     margin: 0;
+    padding-top: 15px;
+    padding-left: 15px;
 }
 
 .news-list-onwebsite {
