@@ -350,6 +350,12 @@ header {
     background-color: #1d2739;
 }
 
+.site-navigation-bar a.active {
+    /* opacity: 0.502; */
+    border-bottom-color: #1d2739;
+    background-color: #1d2739;
+}
+
 .enter-user {
     font-size: 21px;
     line-height: 21px;
