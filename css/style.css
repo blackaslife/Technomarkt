@@ -2087,7 +2087,7 @@ legend {
     grid-template-rows: 1fr auto;
 }
 
-.modal-contact form{
+.modal-contact-form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2119,11 +2119,7 @@ legend {
     width: 188px;
 }
 
-.modal-contact-appointment-text {
-    display: flex;
-    flex-direction: column;
-    width: 460px;
-}
+
 
 .contact-name,
 .contact-email,
@@ -2145,6 +2141,27 @@ legend {
     height: 110px;
     resize: none;
 }
+
+.modal-contact-user {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 49px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.modal-contact-appointment-text {
+    display: flex;
+    flex-direction: column;
+    padding-right: 80px;
+}
+
+.modal-textarea {
+    padding-left: 80px;
+}
+
+
 
 .modal-btn {
     font-family: Cuprum, Arial, sans-serif;
@@ -2170,8 +2187,31 @@ legend {
     cursor: pointer;
 }
 
+.contact-btn {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+
+    background-color: #ee3643;
+
+    width: 460px;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    border-radius: 2px;
+    border-color: #ee3643;
+    border-style: solid;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
 .modal-btn-background {
-    align-self: end;
+    display: flex;
+    justify-content:center;
+    align-items: center;
     background-color: #f4f4f4;
     height: 112px;
 
