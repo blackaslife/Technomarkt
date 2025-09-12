@@ -2422,6 +2422,12 @@ legend {
     background-size: cover;
 }
 
+/* style for delivery.html */
+
+.delivery {
+    background-color: #f4f8f9;
+}
+
 /* style for news.html */
 
 .news-title {
