@@ -2424,8 +2424,32 @@ legend {
 
 /* style for delivery.html */
 
+.delivery-header {
+    margin-bottom: 0;
+}
+
 .delivery {
+    
     background-color: #f4f8f9;
+}
+
+.delivery-title {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: normal;
+    color: #32425c;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.delivery-section p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+
+.delivery-img {
+    float: right;
 }
 
 /* style for news.html */
