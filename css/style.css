@@ -2522,6 +2522,10 @@ legend {
 }
 
 .news-item-title {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 27px;
+    line-height: 28px;
+    font-weight: bold;
     margin: 0;
     padding-top: 15px;
     padding-left: 15px;
@@ -2571,7 +2575,7 @@ legend {
 
 .slider-button-left {
     position: absolute;
-    top: 60px;
+    top: 110px;
     left: 10px;
     z-index: 2;
 }
@@ -2610,7 +2614,7 @@ legend {
 
 .slider-button-right {
     position: absolute;
-    top: 60px;
+    top: 110px;
     right: 10px;
     z-index: 2;
 }
