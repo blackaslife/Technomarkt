@@ -2386,14 +2386,18 @@ legend {
 
 .special-offers-discount,
 .special-offers-code {
+    display: flex;
+    flex-direction: column;
     position: relative;
+    min-height: 240px;
     max-width: 40%;
     margin: 20px;
-    padding: 0 10px 0 10px;
+    padding: 0 10px 0 15px;
     background-color: #f3f7f9;
-    border:#000 3px solid;
     border-radius: 5px;
     color: #ffffff;
+    cursor: pointer;
+    overflow:hidden;
 
 }
 
@@ -2421,6 +2425,40 @@ legend {
     background-image: url('../img/special-offers-code.webp');
     background-size: cover;
 }
+
+.special-offers-title {
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 27px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+.special-offers-proffer {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.special-offers-proffer-title {
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.special-offers-text-title {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 26px;
+    line-height: 27px;
+    font-weight: normal;
+    color: #32425c;
+}
+
+.special-offers-text {
+    margin-bottom: 30px;
+}
+
+
 
 /* style for delivery.html */
 
