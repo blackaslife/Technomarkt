@@ -16,9 +16,14 @@
             <div class="container">
                 <ul class="main-navigation-bar">
                     <li class="main-navigation-logo"><a href="#">Technomart</a></li>
-                    <li class="main-navigation-search"><Form>
-                        <input type="search" name="q" placeholder="Search">
-                    </Form></li>
+                    <li class="main-navigation-search">
+                        <Form action="/search" method="GET">
+                            <input type="search" name="q" placeholder="Search">
+                            <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="17" height="17" viewBox="0 0 18 18">
+                                <path fill="currentColor" d="m17 15.59-3.54-3.55a7.5 7.5 0 1 0-1.41 1.41L15.58 17 17 15.59zM2 7.5a5.5 5.5 0 1 1 11.01.01A5.5 5.5 0 0 1 2 7.5z"/>
+                            </svg>
+                        </Form>
+                    </li>
                     <li class="main-navigation-focus"><a href="#"><img class="bookmark-img" src="img/icon-bookmark1.png" alt="Wish list">Wish list: 0</a></li>
                     <li class="main-navigation-focus"><a href="#"><img class="basket-img" src="img/cart-icon.svg.png" alt="Basket">Basket: 0</a></li>
                     <li class="buy-navigation"><a href="#">Checkout</a></li>

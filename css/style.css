@@ -90,9 +90,16 @@ header {
     background-color: #ba2732;
 }
 
-/*.main-navigation-search {
-    color: #ffffff;
-}*/
+.main-navigation-search {
+    position: relative;
+    display: inline-block;
+}
+
+.icon-search {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+}
 
 .main-navigation-search input{
     display: block;
@@ -104,8 +111,8 @@ header {
     padding-left: 48px;
     border: none;
     background-color: #293449;
-    background: url(../img/icon-search.svg.png) no-repeat;
-    background-position: left 17px top 14px;
+    /* background: url(../img/icon-search.svg.png) no-repeat; */
+    /* background-position: left 17px top 14px; */
     
 }
 
@@ -119,8 +126,8 @@ header {
     /* change img on red 
     background: url();
     background-image: url(../img/icon-search-focus.svg.png) no-repeat;
-    background-position: left 17px top 14px;*/
-}
+    background-position: left 17px top 14px;*/ 
+} 
 
 .main-navigation-focus a {
     display: block;
