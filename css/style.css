@@ -97,8 +97,12 @@ header {
 
 .icon-search {
     position: absolute;
-    top: 15px;
+    top: 50%;
     left: 17px;
+    transform: translateY(-50%);
+    opacity: 30%;
+    pointer-events: none;
+    transition: color 0.3s;
 }
 
 .main-navigation-search input{
@@ -127,7 +131,12 @@ header {
     background: url();
     background-image: url(../img/icon-search-focus.svg.png) no-repeat;
     background-position: left 17px top 14px;*/ 
-} 
+}
+
+.main-navigation-search:focus-within .icon-search {
+    color: red;
+    opacity: 1;
+}
 
 .main-navigation-focus a {
     display: block;
@@ -146,19 +155,29 @@ header {
 .bookmark-img {
     padding-top: 1px;
     opacity: 0.3;
-}
-
-.bookmark-img:hover {
-    opacity: 1;
+    pointer-events: none;
+    transition: 0.3s;
 }
 
 .basket-img {
     opacity: 0.3;
+    pointer-events: none;
+    transition: 0.3s;
 }
 
-.basket-img:hover {
+.main-navigation-focus:hover .bookmark-img,
+.main-navigation-focus:hover .basket-img {
     opacity: 1;
 }
+
+.main-navigation-focus:focus-within .bookmark-img,
+.main-navigation-focus:focus-within .basket-img {
+    opacity: 0.3;
+}
+
+
+
+
 
 .main-navigation-bar li {
     margin: 0;
