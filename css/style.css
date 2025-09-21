@@ -115,8 +115,6 @@ header {
     padding-left: 48px;
     border: none;
     background-color: #293449;
-    /* background: url(../img/icon-search.svg.png) no-repeat; */
-    /* background-position: left 17px top 14px; */
     
 }
 
@@ -127,10 +125,6 @@ header {
 .main-navigation-search input:focus {
     background-color: #ffffff;
     outline-style: none;
-    /* change img on red 
-    background: url();
-    background-image: url(../img/icon-search-focus.svg.png) no-repeat;
-    background-position: left 17px top 14px;*/ 
 }
 
 .main-navigation-search:focus-within .icon-search {
@@ -289,12 +283,18 @@ header {
 }
 
 .enter-navigation-login {
-    padding-top: 11px;
+    padding-top: 13px;
     padding-left: 48px;
     padding-right: 28px;
     padding-bottom: 13px;
-
     position: relative;
+}
+
+.enter-navigation-login svg {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .enter-navigation-registration {
