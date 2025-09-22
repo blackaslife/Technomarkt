@@ -316,11 +316,6 @@ header {
     padding-bottom: 13px;
 }
 
-/* .enter-img {
-    position: absolute;
-    top: 14px;
-    left: 14px;
-} */
 
 
 
@@ -1837,18 +1832,35 @@ legend {
     position: relative;
 }
 
-.enter-user-icon {
+.user-icon {
     position: absolute;
-    left: 14px;
-    top: 13px;
-    bottom: 14px;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    pointer-events: none;
+    transition: 0.3s;
 }
 
-.enter-user-logout {
+.logout-icon {
     position: absolute;
-    top: 14px;
-    bottom: 14px;
-    right: 10px;
+    right: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.enter-user:hover .user-icon,
+.enter-user:hover .logout-icon {
+    opacity: 1;
+}
+
+.enter-user:focus .user-icon,
+.enter-user:focus .logout-icon {
+    opacity: 0.3;
+
 }
 
 
