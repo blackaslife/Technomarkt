@@ -75,3 +75,7 @@ mapClose.addEventListener("click", function (evt) {
     mapPopup.classList.add("visually-hidden");
     mapPopup.classList.remove("modal-animation");
 });
+
+// ==========================
+// Slider
+// ==========================
