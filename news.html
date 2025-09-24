@@ -280,6 +280,156 @@
         </div>
     </footer>
 
-    
+    <script>
+                // ========== НОВИЙ JAVASCRIPT КОД ДЛЯ СЛАЙДЕРА ==========
+        class NewsSlider {
+            constructor(container) {
+                // ВИПРАВЛЕНО: Додана перевірка наявності контейнера
+                if (!container) {
+                    console.error('Container not found');
+                    return;
+                }
+
+                this.container = container;
+                this.leftContainer = container.querySelector('.onwebsite-slider-left');
+                this.rightContainer = container.querySelector('.onwebsite-slider-right');
+                
+                // ВИПРАВЛЕНО: Перевірка наявності елементів
+                if (!this.leftContainer || !this.rightContainer) {
+                    console.error('Slider containers not found');
+                    return;
+                }
+
+                this.leftSlide = this.leftContainer.querySelector('.news-item');
+                this.rightSlide = this.rightContainer.querySelector('.news-item');
+                this.prevButton = container.querySelector('.slider-button-left');
+                this.nextButton = container.querySelector('.slider-button-right');
+                
+                // ВИПРАВЛЕНО: Перевірка наявності всіх необхідних елементів
+                if (!this.leftSlide || !this.rightSlide || !this.prevButton || !this.nextButton) {
+                    console.error('Slider elements not found');
+                    return;
+                }
+                
+                // ЗМІНЕНО: Збираємо всі слайди включно з видимими
+                this.allSlides = [
+                    this.leftSlide,
+                    this.rightSlide,
+                    ...container.querySelectorAll('.visually-hidden')
+                ];
+                
+                this.currentPair = 0;
+                this.totalPairs = Math.ceil(this.allSlides.length / 2);
+                this.isAnimating = false;
+                this.autoSlideInterval = null;
+                
+                this.init();
+            }
+
+            init() {
+                // ДОДАНО: Обробники подій
+                this.prevButton.addEventListener('click', () => this.prevSlide());
+                this.nextButton.addEventListener('click', () => this.nextSlide());
+                
+                // ДОДАНО: Автопрогравання
+                this.startAutoSlide();
+                this.container.addEventListener('mouseenter', () => this.pauseAutoSlide());
+                this.container.addEventListener('mouseleave', () => this.startAutoSlide());
+                
+                // ДОДАНО: Клавіатурна навігація
+                document.addEventListener('keydown', (e) => this.handleKeyboard(e));
+            }
+
+            nextSlide() {
+                if (this.isAnimating) return;
+                this.currentPair = (this.currentPair + 1) % this.totalPairs;
+                this.updateSlides();
+            }
+
+            prevSlide() {
+                if (this.isAnimating) return;
+                this.currentPair = (this.currentPair - 1 + this.totalPairs) % this.totalPairs;
+                this.updateSlides();
+            }
+
+            updateSlides() {
+                // НОВИЙ: Метод заміщення контенту з анімацією
+                this.isAnimating = true;
+                
+                const leftIndex = this.currentPair * 2;
+                const rightIndex = this.currentPair * 2 + 1;
+                
+                // Анімація зникнення
+                this.leftSlide.classList.add('fade-out');
+                this.rightSlide.classList.add('fade-out');
+                
+                setTimeout(() => {
+                    // ЗМІНЕНО: Заміщуємо контент
+                    if (this.allSlides[leftIndex]) {
+                        this.replaceSlideContent(this.leftSlide, this.allSlides[leftIndex]);
+                    }
+                    if (this.allSlides[rightIndex]) {
+                        this.replaceSlideContent(this.rightSlide, this.allSlides[rightIndex]);
+                    }
+                    
+                    // Анімація появи
+                    this.leftSlide.classList.remove('fade-out');
+                    this.rightSlide.classList.remove('fade-out');
+                    this.leftSlide.classList.add('fade-in');
+                    this.rightSlide.classList.add('fade-in');
+                    
+                    setTimeout(() => {
+                        this.leftSlide.classList.remove('fade-in');
+                        this.rightSlide.classList.remove('fade-in');
+                        this.isAnimating = false;
+                    }, 500);
+                }, 250);
+            }
+
+            replaceSlideContent(targetSlide, sourceSlide) {
+                // НОВИЙ: Метод заміщення контенту
+                targetSlide.className = sourceSlide.className.replace('visually-hidden', '');
+                targetSlide.innerHTML = sourceSlide.innerHTML;
+            }
+
+            startAutoSlide() {
+                // ДОДАНО: Автопрогравання
+                this.pauseAutoSlide();
+                this.autoSlideInterval = setInterval(() => {
+                    this.nextSlide();
+                }, 5000);
+            }
+
+            pauseAutoSlide() {
+                if (this.autoSlideInterval) {
+                    clearInterval(this.autoSlideInterval);
+                    this.autoSlideInterval = null;
+                }
+            }
+
+            handleKeyboard(e) {
+                // ДОДАНО: Клавіатурна навігація
+                if (e.key === 'ArrowLeft') {
+                    this.prevSlide();
+                } else if (e.key === 'ArrowRight') {
+                    this.nextSlide();
+                }
+            }
+        }
+
+        // ДОДАНО: Автоматична ініціалізація з правильною послідовністю
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, initializing slider...');
+            
+            const sliders = document.querySelectorAll('.news-list-onwebsite');
+            console.log('Found sliders:', sliders.length);
+            
+            sliders.forEach((slider, index) => {
+                console.log(`Initializing slider ${index + 1}...`);
+                new NewsSlider(slider);
+            });
+        });
+    </script>
 </body>
 </html>
+

@@ -2830,6 +2830,16 @@ legend {
     background-size: cover;
 }
 
+.news-item.fade-out {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.news-item.fade-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
 /* style for contact.html */
 
 .company-contact {
