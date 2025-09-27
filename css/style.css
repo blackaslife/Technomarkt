@@ -108,7 +108,9 @@ header {
 .main-navigation-search input{
     display: block;
     color: #000;
-    width: 270px;
+    width: 100%;
+    max-width: 270px;
+    min-width: 200px;
     padding-top: 14px;
     padding-right: 30px;
     padding-bottom: 15px;
@@ -386,6 +388,19 @@ header {
     /* opacity: 0.502; */
     border-bottom-color: #1d2739;
     background-color: #1d2739;
+}
+
+/* Mobile navigation */
+
+@media (max-width: 768px) {
+    .site-navigation-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-navigation-bar li {
+        width: 100%;
+    }
 }
 
 .enter-user {
@@ -1779,9 +1794,17 @@ legend {
 }
 
 .container {
-    width: 940px;
+    width: 100%;
+    max-width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
 }
 
 .index {
@@ -1789,12 +1812,32 @@ legend {
 }
 
 .main-navigation-bar {
-    width: 940px;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
+    
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+    .main-navigation-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-navigation-logo {
+        order: -1;
+    }
+    
+    .main-navigation-search {
+        order: 1;
+        width: 100%;
+        margin: 10px 0;
+    }
     
 }
 
@@ -1860,6 +1903,34 @@ legend {
 .enter-user:focus .user-icon,
 .enter-user:focus .logout-icon {
     opacity: 0.3;
+
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+    .main-header-down {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .site-info {
+        margin: 10px 0 10px 0;
+        padding-left: 10px;
+        display: none;
+    }
+
+    .site-tel-adres {
+        display: none;
+    }
+
+    .enter-navigation {
+        margin: 20px 0 20px 0;
+    }
+
+    .enter-navigation li {
+        margin: 0;
+    }
+
 
 }
 
