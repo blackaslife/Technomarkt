@@ -1149,6 +1149,7 @@ header {
     margin-bottom: 25px;
 }
 
+
 .delivery-company {
     font-size: 18px;
     line-height: 20px;
@@ -1253,6 +1254,17 @@ header {
     
 
 }
+
+@media (max-width: 768px) {
+    .flex-info-contacts {
+        flex-direction: column;
+    }
+
+    .contacts {
+        width: 100%;
+    }
+}
+
 
 /*footer*/
 
