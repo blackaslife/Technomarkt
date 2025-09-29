@@ -1262,6 +1262,12 @@ header {
 
     .contacts {
         width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .company-info {
+        width: 100%;
+        margin: 0;
     }
 }
 
