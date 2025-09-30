@@ -1856,7 +1856,6 @@ legend {
     flex-direction: column;
     margin-bottom: 23px;
     align-items: center;
-    min-width: 960px;
 }
 
 .main-navigation {
@@ -1880,7 +1879,7 @@ legend {
 @media (max-width: 768px) {
   .container {
     max-width: 100%;
-    padding: 0 15px;
+    padding: 0;
   }
 }
 
@@ -2040,7 +2039,38 @@ legend {
     margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+    .catalog-list-flex {
+        flex-direction: column;
+    }
 
+    .catalog-list-flex-left-top {
+        flex-direction: column;
+        order: 1;
+    }
+
+    .catalog-list-flex-left-top li {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+
+
+
+    .catalog-list .catalog-tools-drill, 
+    .catalog-list .catalog-tools-perforators {
+        width: 100%;
+        
+    }
+
+    .catalog-slider {
+        margin-bottom: 20px;
+    }
+
+    .catalog-list-flex-right li {
+        margin: 0 auto 20px auto;
+    }
+}
 
 
 
