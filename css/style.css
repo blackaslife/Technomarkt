@@ -105,7 +105,7 @@ header {
     transition: color 0.3s;
 }
 
-.main-navigation-search input{
+.main-navigation-search input {
     display: block;
     color: #000;
     width: 100%;
@@ -794,6 +794,20 @@ header {
     
 }
 
+@media (max-width: 768px) {
+    .popular-goods-link {
+        text-align: center;
+        padding: 15px 0 15px 0;
+        margin: 0;
+    }
+
+
+    .popular-goods-link a {
+        position: static;
+        margin: 20px auto 0 auto;
+    }
+}
+
 .popular-goods-list {
     list-style: none;
     display: flex;
@@ -973,6 +987,19 @@ header {
     position: absolute;
     top: 25px;
     right: 24px;
+}
+
+@media (max-width: 768px) {
+    .popular-brands-link {
+        text-align: center;
+        padding: 15px 0 15px 0;
+        margin: 0;
+    }
+
+    .popular-brands-link a {
+        position: static;
+        margin: 20px auto 0 auto;
+    }
 }
 
 .popular-brands-list {
@@ -1913,6 +1940,10 @@ legend {
         order: 1;
         width: 100%;
         margin: 10px 0;
+    }
+
+    .main-navigation-search input {
+        max-width: 100%;
     }
     
 }
