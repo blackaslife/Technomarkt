@@ -1039,6 +1039,13 @@ header {
     opacity: 0.3;
 }
 
+@media (max-width: 768px) {
+    .popular-brands-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /*section services*/
 
 .services-flex {
@@ -1287,15 +1294,49 @@ header {
         flex-direction: column;
     }
 
-    .contacts {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
     .company-info {
         width: 100%;
         margin: 0;
     }
+
+    .company-info h2 {
+        text-align: center;
+    }
+
+    .company-info p {
+        text-align: center;
+    }
+
+    .delivery-company {
+        margin: 0 10px 0 10px;
+    }
+
+    .company-info a {
+        margin: 15px auto 0 auto;
+    }
+
+    .contacts {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .contacts h2 {
+        text-align: center;
+    }
+
+    .contacts p {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .contacts img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contacts button {
+        margin: 15px auto 0 auto;
+
 }
 
 
