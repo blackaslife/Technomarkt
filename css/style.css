@@ -1336,6 +1336,7 @@ header {
 
     .contacts button {
         margin: 15px auto 0 auto;
+    }
 
 }
 
@@ -2670,6 +2671,20 @@ legend {
 
 .company-page section {
     padding: 0 10px 0 10px;
+}
+
+@media (max-width: 768px) {
+    .company-page {
+        grid-template-columns: 1fr;
+    }
+
+    .company-page h2 {
+        text-align: center;
+    }
+
+    .company-page section {
+        padding: 0 20px 0 20px;
+    }
 }
 
 /* style for special-offers.html */
