@@ -1120,8 +1120,17 @@ header {
 
 }
 
+.services-wrapper {
+    width: 100%;
+}
+
 .services-list {
     list-style: none;
+}
+
+.services-list-item {
+    position: relative;
+    width: 100%;
 }
 
  .services-list-item h3{
@@ -1133,9 +1142,21 @@ header {
 }
 
 .services-delivery-img {
-    position: relative;
-    top: -153px;
-    left: 180px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.services-guaranty-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.services-credit-img {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .services-credit-send {
