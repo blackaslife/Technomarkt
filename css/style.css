@@ -1166,13 +1166,45 @@ header {
 }
 
 .services-credit-send {
+    display: block;
     font-family: Cuprum, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
     color: #ffffff;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    width: 195px;
+    border-radius: 3px;
 
-    background-color: #ff5357;
+    background-color: #ee3643;
+}
+
+@media (max-width: 768px) {
+    .services-rendered {
+        text-align: center;
+        padding: 15px 0 15px 0;
+        margin: 0;
+    }
+
+    .services-rendered-text {
+        text-align: center;
+    }
+
+    .services-btn {
+        width: 120px;
+    }
+
+    .services-btn-layer {
+        left: 110px;
+    }
+
+    .services-delivery-img,
+    .services-guaranty-img,
+    .services-credit-img {
+        display: none;
+    }
 }
 
 /*section company info*/
