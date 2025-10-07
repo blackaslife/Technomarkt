@@ -2541,9 +2541,13 @@ legend {
     display: block;
 
     position: absolute;
-    top: 350px;
+    top: 350px; 
     left: 80px;
     cursor: pointer;
+}
+
+.modal-login-btn {
+    top: 32vh;
 }
 
 .contact-btn {
@@ -2577,10 +2581,10 @@ legend {
     z-index: -1;
 }
 
-.modal-login-btn {
-    top: 35vh;
+/* .modal-login-btn {
+    top: 32vh;
 
-}
+} */
     
 .modal-login form {
     display: flex;

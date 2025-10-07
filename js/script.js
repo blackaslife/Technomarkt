@@ -8,8 +8,11 @@ const mapLink = document.querySelector(".contacts img");
 const mapPopup = document.querySelector(".modal-map");
 const mapClose = mapPopup.querySelector(".modal-close");
 
-const loginLink = document.querySelector(".enter-navigation-login")
-const loginPopup = document.querySelector("modal-login");
+const loginLink = document.querySelector(".enter-navigation-login");
+const loginPopup = document.querySelector(".modal-login");
+const loginClose = loginPopup.querySelector(".modal-close");
+const loginUsername = loginPopup.querySelector("[name=name]");
+const loginUserpassword = loginPopup.querySelector("[name=password]");
 
 let isStorageSupport = true;
 let storage = "";
@@ -19,6 +22,10 @@ try {
 } catch (err) {
     isStorageSupport = false;
 }
+
+// ==========================
+// Contact modal
+// ==========================
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -58,11 +65,18 @@ window.addEventListener("keydown", function (evt) {
             evt.preventDefault();
             popup.classList.add("visually-hidden");
             mapPopup.classList.add("visually-hidden");
+            loginPopup.classList.add("visually-hidden");
             popup.classList.remove("modal-animation");
             popup.classList.remove("modal-error");
             mapPopup.classList.remove("modal-animation");
+            loginPopup.classList.remove("modal-animation");
+            loginPopup.classList.remove("modal-error");
     }
 });
+
+// ==========================
+// Map modal
+// ==========================
 
 mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -77,5 +91,26 @@ mapClose.addEventListener("click", function (evt) {
 });
 
 // ==========================
-// Slider
+// Login modal
 // ==========================
+
+loginLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    loginPopup.classList.remove("visually-hidden");
+    loginPopup.classList.add("modal-animation");
+
+    if (storage) {
+        loginUsername.value = storage;
+        loginUserpassword.focus();
+    } else {
+        loginUsername.focus();
+    }
+
+});
+
+loginClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    loginPopup.classList.add("visually-hidden");
+    loginPopup.classList.remove("modal-animation");
+    loginPopup.classList.remove("modal-error");
+});
