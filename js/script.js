@@ -10,6 +10,7 @@ const mapClose = mapPopup.querySelector(".modal-close");
 
 const loginLink = document.querySelector(".enter-navigation-login");
 const loginPopup = document.querySelector(".modal-login");
+const loginForm = loginPopup.querySelector("form");
 const loginClose = loginPopup.querySelector(".modal-close");
 const loginUsername = loginPopup.querySelector("[name=name]");
 const loginUserpassword = loginPopup.querySelector("[name=password]");
@@ -53,6 +54,9 @@ form.addEventListener("submit", function (evt) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
+    // loginPopup.classList.remove("modal-error");
+    // loginPopup.offsetWidth = loginPopup.offsetWidth;
+    // loginPopup.classList.add("modal-error"); 
     } else {
         if(isStorageSupport) {
         localStorage.setItem("username", username.value);                    
@@ -107,6 +111,20 @@ loginLink.addEventListener("click", function (evt) {
     }
 
 });
+
+loginForm.addEventListener("submit", function (evt) {
+    if(!loginUsername.value || !loginUserpassword.value) {
+        evt.preventDefault();
+        loginPopup.classList.remove("modal-error");
+        loginPopup.offsetWidth = loginPopup.offsetWidth;
+        loginPopup.classList.add("modal-error");
+    } else {
+        if(isStorageSupport) {
+            localStorage.setItem("username", loginUsername.value);
+        }
+    }
+
+})
 
 loginClose.addEventListener("click", function (evt) {
     evt.preventDefault();
