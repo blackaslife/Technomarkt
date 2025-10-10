@@ -15,6 +15,15 @@ const loginClose = loginPopup.querySelector(".modal-close");
 const loginUsername = loginPopup.querySelector("[name=name]");
 const loginUserpassword = loginPopup.querySelector("[name=password]");
 
+const registrationLink = document.querySelector(".enter-navigation-registration");
+const registrationPopup = document.querySelector(".modal-registration");
+const registrationForm = registrationPopup.querySelector("form");
+const registrationClose = registrationPopup.querySelector(".modal-close");
+const registrationUsername = registrationPopup.querySelector("[name=First_Name]");
+const registrationLastname = registrationPopup.querySelector("[name=Last_Name]");
+const registrationEmail = registrationPopup.querySelector("[name=Email]");
+const registrationPassword = registrationPopup.querySelector("[name=Password]");
+
 let isStorageSupport = true;
 let storage = "";
 
@@ -54,9 +63,6 @@ form.addEventListener("submit", function (evt) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
-    // loginPopup.classList.remove("modal-error");
-    // loginPopup.offsetWidth = loginPopup.offsetWidth;
-    // loginPopup.classList.add("modal-error"); 
     } else {
         if(isStorageSupport) {
         localStorage.setItem("username", username.value);                    
@@ -70,11 +76,16 @@ window.addEventListener("keydown", function (evt) {
             popup.classList.add("visually-hidden");
             mapPopup.classList.add("visually-hidden");
             loginPopup.classList.add("visually-hidden");
+            registrationPopup.classList.add("visually-hidden");
             popup.classList.remove("modal-animation");
             popup.classList.remove("modal-error");
             mapPopup.classList.remove("modal-animation");
             loginPopup.classList.remove("modal-animation");
             loginPopup.classList.remove("modal-error");
+            registrationPopup.classList.remove("modal-animation");
+            registrationPopup.classList.remove("modal-error");
+            
+
     }
 });
 
@@ -132,3 +143,32 @@ loginClose.addEventListener("click", function (evt) {
     loginPopup.classList.remove("modal-animation");
     loginPopup.classList.remove("modal-error");
 });
+
+// ==========================
+// Modal registration
+// ==========================
+
+registrationLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    registrationPopup.classList.remove("visually-hidden");
+    registrationPopup.classList.add("modal-animation");
+    registrationUsername.focus();
+});
+
+registrationForm.addEventListener("submit", function (evt) {
+    if(!registrationUsername.value || !registrationLastname.value || !registrationEmail.value || !registrationPassword.value) {
+        evt.preventDefault();
+        registrationPopup.classList.remove("modal-error");
+        registrationPopup.offsetWidth = registrationPopup.offsetWidth;
+        registrationPopup.classList.add("modal-error");
+    }
+});
+
+registrationClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    registrationPopup.classList.add("visually-hidden");
+    registrationPopup.classList.remove("modal-animation");
+    registrationPopup.classList.remove("modal-error");
+});
+
+// ==========================
