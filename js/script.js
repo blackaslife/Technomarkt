@@ -172,3 +172,8 @@ registrationClose.addEventListener("click", function (evt) {
 });
 
 // ==========================
+// Modal Send Message on Contact Page
+// ==========================
+
+const sendMessageLink = document.querySelector(".quick-chat");
+const sendMessagePopup = document.querySelector(".quick-chat-modal");
