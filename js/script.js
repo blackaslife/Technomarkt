@@ -1,9 +1,9 @@
-const link = document.querySelector(".contacts button");
-const popup = document.querySelector(".modal-contact");
-const form = popup.querySelector("form");
-const close = document.querySelector(".modal-contact .modal-close");
-const username = popup.querySelector("[name=name]");
-const useremail = popup.querySelector("[name=email]");
+// const link = document.querySelector(".contacts button");
+// const popup = document.querySelector(".modal-contact");
+// const form = popup.querySelector("form");
+// const close = document.querySelector(".modal-contact .modal-close");
+// const username = popup.querySelector("[name=name]");
+// const useremail = popup.querySelector("[name=email]");
 const mapLink = document.querySelector(".contacts img");
 const mapPopup = document.querySelector(".modal-map");
 const mapClose = mapPopup.querySelector(".modal-close");
@@ -24,70 +24,65 @@ const registrationLastname = registrationPopup.querySelector("[name=Last_Name]")
 const registrationEmail = registrationPopup.querySelector("[name=Email]");
 const registrationPassword = registrationPopup.querySelector("[name=Password]");
 
-let isStorageSupport = true;
-let storage = "";
 
-try {
-    storage = localStorage.getItem("username");
-} catch (err) {
-    isStorageSupport = false;
-}
 
 // ==========================
 // Contact modal
 // ==========================
 
-link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("visually-hidden");
-    popup.classList.add("modal-animation");
 
-    if (storage) {
-        username.value = storage;
-        useremail.focus();
-    } else {
-      username.focus();             
-    }
-});
 
-close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("visually-hidden");
-    popup.classList.remove("modal-animation");
-    popup.classList.remove("modal-error");
-});
+// link.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     popup.classList.remove("visually-hidden");
+//     popup.classList.add("modal-animation");
 
-form.addEventListener("submit", function (evt) {
-    if(!username.value || !useremail.value) {
-    evt.preventDefault();
-    popup.classList.remove("modal-error");
-    popup.offsetWidth = popup.offsetWidth;
-    popup.classList.add("modal-error");
-    } else {
-        if(isStorageSupport) {
-        localStorage.setItem("username", username.value);                    
-        }
-    }
-});
+//     if (storage) {
+//         username.value = storage;
+//         useremail.focus();
+//     } else {
+//       username.focus();             
+//     }
+// });
 
-window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-            evt.preventDefault();
-            popup.classList.add("visually-hidden");
-            mapPopup.classList.add("visually-hidden");
-            loginPopup.classList.add("visually-hidden");
-            registrationPopup.classList.add("visually-hidden");
-            popup.classList.remove("modal-animation");
-            popup.classList.remove("modal-error");
-            mapPopup.classList.remove("modal-animation");
-            loginPopup.classList.remove("modal-animation");
-            loginPopup.classList.remove("modal-error");
-            registrationPopup.classList.remove("modal-animation");
-            registrationPopup.classList.remove("modal-error");
-            
+// close.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     popup.classList.add("visually-hidden");
+//     popup.classList.remove("modal-animation");
+//     popup.classList.remove("modal-error");
+// });
 
-    }
-});
+// form.addEventListener("submit", function (evt) {
+//     if(!username.value || !useremail.value) {
+//     evt.preventDefault();
+//     popup.classList.remove("modal-error");
+//     popup.offsetWidth = popup.offsetWidth;
+//     popup.classList.add("modal-error");
+//     } else {
+//         if(isStorageSupport) {
+//         localStorage.setItem("username", username.value);                    
+//         }
+//     }
+// });
+
+// Закриття всіх модальних вікон натисканням ESC
+
+// window.addEventListener("keydown", function (evt) {
+//     if (evt.keyCode === 27) {
+//             evt.preventDefault();
+//             popup.classList.add("visually-hidden");
+//             mapPopup.classList.add("visually-hidden");
+//             loginPopup.classList.add("visually-hidden");
+//             registrationPopup.classList.add("visually-hidden");
+//             popup.classList.remove("modal-animation");
+//             popup.classList.remove("modal-error");
+//             mapPopup.classList.remove("modal-animation");
+//             loginPopup.classList.remove("modal-animation");
+//             loginPopup.classList.remove("modal-error");
+//             registrationPopup.classList.remove("modal-animation");
+//             registrationPopup.classList.remove("modal-error");
+//     }
+// });
 
 // ==========================
 // Map modal
@@ -194,4 +189,4 @@ sendMessageLink.addEventListener("click", function (evt) {
 });
 
 // змінити структуру JS зробити під кожну сторінку окремий файл JS
-// зробити перевірку наявності елементів на сторінці перед тим як вішати слухачі подій
+// зробити перевірку наявності елементів на сторінці перед тим як вішати слухачі подій 
