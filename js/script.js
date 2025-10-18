@@ -4,9 +4,9 @@
 // const close = document.querySelector(".modal-contact .modal-close");
 // const username = popup.querySelector("[name=name]");
 // const useremail = popup.querySelector("[name=email]");
-const mapLink = document.querySelector(".contacts img");
-const mapPopup = document.querySelector(".modal-map");
-const mapClose = mapPopup.querySelector(".modal-close");
+// const mapLink = document.querySelector(".contacts img");
+// const mapPopup = document.querySelector(".modal-map");
+// const mapClose = mapPopup.querySelector(".modal-close");
 
 const loginLink = document.querySelector(".enter-navigation-login");
 const loginPopup = document.querySelector(".modal-login");
@@ -88,17 +88,17 @@ const registrationPassword = registrationPopup.querySelector("[name=Password]");
 // Map modal
 // ==========================
 
-mapLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mapPopup.classList.remove("visually-hidden");
-    mapPopup.classList.add("modal-animation");
-});
+// mapLink.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     mapPopup.classList.remove("visually-hidden");
+//     mapPopup.classList.add("modal-animation");
+// });
 
-mapClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mapPopup.classList.add("visually-hidden");
-    mapPopup.classList.remove("modal-animation");
-});
+// mapClose.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     mapPopup.classList.add("visually-hidden");
+//     mapPopup.classList.remove("modal-animation");
+// });
 
 // ==========================
 // Login modal
