@@ -169,24 +169,24 @@
 // ==========================
 // Modal Send Message on Contact Page
 // ==========================
+ 
+// const sendMessageLink = document.querySelector(".quick-chat");
+// const sendMessagePopup = document.querySelector(".quick-chat-modal");
+// const sendMessageForm = sendMessagePopup.querySelector("form");
+// const sendMessageClose = sendMessagePopup.querySelector(".modal-close");
 
-const sendMessageLink = document.querySelector(".quick-chat");
-const sendMessagePopup = document.querySelector(".quick-chat-modal");
-const sendMessageForm = sendMessagePopup.querySelector("form");
-const sendMessageClose = sendMessagePopup.querySelector(".modal-close");
-
-sendMessageLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    sendMessagePopup.classList.remove("visually-hidden");
-    sendMessagePopup.classList.add("modal-animation");
+// sendMessageLink.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     sendMessagePopup.classList.remove("visually-hidden");
+//     sendMessagePopup.classList.add("modal-animation");
     
-    if (storage) {
-        username.value = storage;
-        useremail.focus();
-    } else {
-        username.focus();
-    }
-});
+//     if (storage) {
+//         username.value = storage;
+//         useremail.focus();
+//     } else {
+//         username.focus();
+//     }
+// });
 
 // змінити структуру JS зробити під кожну сторінку окремий файл JS
 // зробити перевірку наявності елементів на сторінці перед тим як вішати слухачі подій 
