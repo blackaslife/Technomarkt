@@ -8,12 +8,12 @@
 // const mapPopup = document.querySelector(".modal-map");
 // const mapClose = mapPopup.querySelector(".modal-close");
 
-const loginLink = document.querySelector(".enter-navigation-login");
-const loginPopup = document.querySelector(".modal-login");
-const loginForm = loginPopup.querySelector("form");
-const loginClose = loginPopup.querySelector(".modal-close");
-const loginUsername = loginPopup.querySelector("[name=name]");
-const loginUserpassword = loginPopup.querySelector("[name=password]");
+// const loginLink = document.querySelector(".enter-navigation-login");
+// const loginPopup = document.querySelector(".modal-login");
+// const loginForm = loginPopup.querySelector("form");
+// const loginClose = loginPopup.querySelector(".modal-close");
+// const loginUsername = loginPopup.querySelector("[name=name]");
+// const loginUserpassword = loginPopup.querySelector("[name=password]");
 
 const registrationLink = document.querySelector(".enter-navigation-registration");
 const registrationPopup = document.querySelector(".modal-registration");
@@ -104,40 +104,40 @@ const registrationPassword = registrationPopup.querySelector("[name=Password]");
 // Login modal
 // ==========================
 
-loginLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    loginPopup.classList.remove("visually-hidden");
-    loginPopup.classList.add("modal-animation");
+// loginLink.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     loginPopup.classList.remove("visually-hidden");
+//     loginPopup.classList.add("modal-animation");
 
-    if (storage) {
-        loginUsername.value = storage;
-        loginUserpassword.focus();
-    } else {
-        loginUsername.focus();
-    }
+//     if (storage) {
+//         loginUsername.value = storage;
+//         loginUserpassword.focus();
+//     } else {
+//         loginUsername.focus();
+//     }
 
-});
+// });
 
-loginForm.addEventListener("submit", function (evt) {
-    if(!loginUsername.value || !loginUserpassword.value) {
-        evt.preventDefault();
-        loginPopup.classList.remove("modal-error");
-        loginPopup.offsetWidth = loginPopup.offsetWidth;
-        loginPopup.classList.add("modal-error");
-    } else {
-        if(isStorageSupport) {
-            localStorage.setItem("username", loginUsername.value);
-        }
-    }
+// loginForm.addEventListener("submit", function (evt) {
+//     if(!loginUsername.value || !loginUserpassword.value) {
+//         evt.preventDefault();
+//         loginPopup.classList.remove("modal-error");
+//         loginPopup.offsetWidth = loginPopup.offsetWidth;
+//         loginPopup.classList.add("modal-error");
+//     } else {
+//         if(isStorageSupport) {
+//             localStorage.setItem("username", loginUsername.value);
+//         }
+//     }
 
-})
+// })
 
-loginClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    loginPopup.classList.add("visually-hidden");
-    loginPopup.classList.remove("modal-animation");
-    loginPopup.classList.remove("modal-error");
-});
+// loginClose.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     loginPopup.classList.add("visually-hidden");
+//     loginPopup.classList.remove("modal-animation");
+//     loginPopup.classList.remove("modal-error");
+// });
 
 // ==========================
 // Modal registration
