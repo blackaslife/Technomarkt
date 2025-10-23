@@ -2952,6 +2952,7 @@ legend {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .news-list-ourlife {
@@ -2971,12 +2972,12 @@ legend {
 }
 
 
-.onwebsite-slider-left,
+/* .onwebsite-slider-left,
 .onwebsite-slider-right {
     position: relative;
     width: 48%;
 }
-
+ */
 
 .slider-button {
     width: 50px;
