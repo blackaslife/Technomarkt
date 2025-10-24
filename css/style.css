@@ -2957,6 +2957,11 @@ legend {
     overflow: hidden;
 }
 
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
 .news-list-ourlife {
     display: flex;
     flex-direction: row;
