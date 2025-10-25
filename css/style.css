@@ -2896,7 +2896,7 @@ legend {
 .news-item {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 470px;
     min-height: 280px;
     color: #ffffff;
 }
@@ -2927,7 +2927,7 @@ legend {
     content: "";
     position: absolute;
     inset: 0;
-    background-color:rgba(0, 0, 0, 0.4);
+    background-color:rgba(0, 0, 0, 0.1);
     z-index: 0;
 }
 
@@ -2953,7 +2953,7 @@ legend {
     justify-content: space-around;
     margin-bottom: 20px;
     position: relative;
-    width: 100%;
+    width: 940px;
     overflow: hidden;
 }
 

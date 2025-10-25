@@ -8,7 +8,7 @@ const visibleSlides = 2;
 const totalSlides = slides.length;
 
 function updateCarousele() {
-    const move = index * 451; // ширина одного слайда з урахуванням відступів
+    const move = index * 470; // ширина одного слайда з урахуванням відступів
     onwebsite.style.transform = `translateX(-${move}px)`;
 }
 
