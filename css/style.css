@@ -2969,6 +2969,8 @@ legend {
     justify-content:space-around;
     margin-bottom: 20px;
     position: relative;
+    width: 940px;
+    overflow: hidden;
 }
 
 .news-list-blog {
