@@ -2968,6 +2968,7 @@ legend {
     flex-wrap: wrap;
     justify-content:space-around;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .news-list-blog {
@@ -2976,6 +2977,7 @@ legend {
     flex-wrap: nowrap;
     justify-content: space-around;
     margin-bottom: 60px;
+    position: relative;
 }
 
 
