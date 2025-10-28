@@ -1,3 +1,6 @@
+// треба додати overlay до всіх модалок без оголошення, бо він вже оголошений в main.js 
+
+
 const link = document.querySelector(".contacts button");
 const popup = document.querySelector(".modal-contact");
 
