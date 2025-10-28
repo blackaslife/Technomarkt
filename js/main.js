@@ -23,3 +23,18 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+// Закриття модалки при кліку поза нею (по overlay)
+const overlay = document.querySelector(".modal-overlay");
+
+if (overlay) {
+  overlay.addEventListener("click", function () {
+    const modals = document.querySelectorAll(".modal-animation");
+    modals.forEach(modal => {
+      modal.classList.add("visually-hidden");
+      modal.classList.remove("modal-animation");
+      modal.classList.remove("modal-error");
+    });
+
+    overlay.classList.add("visually-hidden");
+  });
+}

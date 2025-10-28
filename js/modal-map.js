@@ -1,4 +1,4 @@
-const overlay = document.querySelector(".modal-overlay");
+// const overlay = document.querySelector(".modal-overlay");
 const mapLink = document.querySelector(".contacts img");
 const mapPopup = document.querySelector(".modal-map");
 
@@ -19,9 +19,4 @@ if (mapLink && mapPopup) {
     mapPopup.classList.remove("modal-animation");
   });
 
-  overlay.addEventListener("click", function () {
-    overlay.classList.add("visually-hidden");
-    mapPopup.classList.add("visually-hidden");
-    mapPopup.classList.remove("modal-animation");
-  });
 }
