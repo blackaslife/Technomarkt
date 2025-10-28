@@ -2293,7 +2293,7 @@ legend {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6); /* затемнення */
-  z-index: 10; /* нижче, ніж попап */
+  z-index: 1; /* нижче, ніж попап */
 }
 
 .modal-animation {
