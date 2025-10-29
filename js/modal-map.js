@@ -1,4 +1,3 @@
-// const overlay = document.querySelector(".modal-overlay");
 const mapLink = document.querySelector(".contacts img");
 const mapPopup = document.querySelector(".modal-map");
 

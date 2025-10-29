@@ -12,6 +12,7 @@ if (link && popup) {
 
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
+    overlay.classList.remove("visually-hidden");
     popup.classList.remove("visually-hidden");
     popup.classList.add("modal-animation");
 
@@ -25,6 +26,7 @@ if (link && popup) {
 
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
+    overlay.classList.add("visually-hidden");
     popup.classList.add("visually-hidden");
     popup.classList.remove("modal-animation");
     popup.classList.remove("modal-error");
