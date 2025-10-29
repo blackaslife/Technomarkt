@@ -9,6 +9,7 @@ if (loginLink && loginPopup) {
 
   loginLink.addEventListener("click", function (evt) {
     evt.preventDefault();
+    overlay.classList.remove("visually-hidden");
     loginPopup.classList.remove("visually-hidden");
     loginPopup.classList.add("modal-animation");
 
@@ -33,6 +34,7 @@ if (loginLink && loginPopup) {
 
   loginClose.addEventListener("click", function (evt) {
     evt.preventDefault();
+    overlay.classList.add("visually-hidden");
     loginPopup.classList.add("visually-hidden");
     loginPopup.classList.remove("modal-animation");
     loginPopup.classList.remove("modal-error");
