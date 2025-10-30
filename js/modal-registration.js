@@ -11,6 +11,7 @@ if (registrationLink && registrationPopup) {
 
   registrationLink.addEventListener("click", function (evt) {
     evt.preventDefault();
+    overlay.classList.remove("visually-hidden");
     registrationPopup.classList.remove("visually-hidden");
     registrationPopup.classList.add("modal-animation");
     registrationUsername.focus();
@@ -32,6 +33,7 @@ if (registrationLink && registrationPopup) {
 
   registrationClose.addEventListener("click", function (evt) {
     evt.preventDefault();
+    overlay.classList.add("visually-hidden");
     registrationPopup.classList.add("visually-hidden");
     registrationPopup.classList.remove("modal-animation");
     registrationPopup.classList.remove("modal-error");
