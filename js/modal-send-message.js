@@ -7,8 +7,9 @@ if (sendMessageLink && sendMessagePopup) {
 
   sendMessageLink.addEventListener("click", function (evt) {
     evt.preventDefault();
-    sendMessagePopup.classList.remove("visually-hidden");
-    sendMessagePopup.classList.add("modal-animation");
+      overlay.classList.remove("visually-hidden");
+      sendMessagePopup.classList.remove("visually-hidden");
+      sendMessagePopup.classList.add("modal-animation");
         if (storage) {
         username.value = storage;
         useremail.focus();
@@ -19,6 +20,7 @@ if (sendMessageLink && sendMessagePopup) {
 
   sendMessageClose.addEventListener("click", function (evt) {
     evt.preventDefault();
+    overlay.classList.add("visually-hidden");
     sendMessagePopup.classList.add("visually-hidden");
     sendMessagePopup.classList.remove("modal-animation");
   });
