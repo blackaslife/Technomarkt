@@ -174,7 +174,57 @@
             </div>
         </div>
     </footer>
+    <div class="modal-overlay visually-hidden"></div>
+    <section class="modal modal-login visually-hidden">
+        <form action="https://webhook.site/dd5b8918-696d-48fa-87f0-e5927b945516" method="post">
+            <p class="modal-login-appointment-name">
+                <label class="label-name" for="login-name">Your login:</label>
+                <input class="login-name" type="text" id="login-name" name="name" value="" placeholder="Enter your login">
+            </p>
+            <p class="modal-login-appointment-password">
+                <label class="label-password" for="login-password">Your password:</label>
+                <input class="login-password" type="password" id="login-password" name="password" value="" placeholder="Enter your password">
+            </p>
+            <p class="modal-login-appointment-remember">
+                <label class="label-remember" for="login-remember">Remember me
+                <input class="login-remember visually-hidden" type="checkbox" id="login-remember" name="remember">
+                <span class="label-checkbox-indicator"></span>
+                </label>
+            </p>
+            <button class="modal-btn modal-login-btn" type="submit">LOGIN</button>
 
-    
+        </form>
+        <div class="modal-btn-background">
+        </div>
+        <button class="modal-close" type="button">Close</button>
+    </section>
+    <section class="modal modal-registration visually-hidden">
+        <form action="https://webhook.site/dd5b8918-696d-48fa-87f0-e5927b945516" method="post">
+            <div class="modal-registration-grid">
+                <p>
+                    <label for="First_Name_registration">First Name</label>
+                    <input class="modal-registration-input" type="text" name="First_Name" id="First_Name_registration" value="" placeholder="Your First Name">
+                </p>
+                <p>
+                    <label for="Last_Name_registration">Last Name</label>
+                    <input class="modal-registration-input" type="text" name="Last_Name" id="Last_Name_registration" value="" placeholder="Your Last Name">               
+                </p>
+                <p>
+                    <label for="email_registration">E-mail</label>
+                    <input class="modal-registration-input" type="text" name="email" id="email_registration" value="" placeholder="Your e-mail">                
+                </p>
+                <p>
+                    <label for="password_registration">Password</label>
+                    <input class="modal-registration-input" type="text" name="password" id="password_registration" value="" placeholder="Your password">
+                </p>
+                <button class="modal-btn modal-registration-btn" type="submit">CREATE ACCOUNT</button>
+            </div>
+        </form>
+        <div class="modal-btn-background"></div>
+        <button class="modal-close" type="button">Close</button>
+    </section>
+    <script src="js/main.js"></script>
+    <script src="js/modal-login.js"></script>
+    <script src="js/modal-registration.js"></script>
 </body>
 </html>
