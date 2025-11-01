@@ -2139,6 +2139,10 @@ legend {
         margin: 0;
     }
 
+    .enter-account {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
 }
 
@@ -2843,7 +2847,14 @@ legend {
     margin-bottom: 30px;
 }
 
-
+@media (max-width: 768px) {
+    .special-offers-discount,
+    .special-offers-code {
+        max-width: 100%;
+    }
+    .special-offers-text {
+        padding: 0 20px 0 20px;
+}
 
 /* style for delivery.html */
 
