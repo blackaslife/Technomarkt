@@ -2954,6 +2954,7 @@ legend {
 }
 
 .news-item-content {
+    width: 80%;
     padding-bottom: 10px;
 }
 
@@ -3214,6 +3215,37 @@ legend {
 .news-item.fade-in {
     opacity: 1;
     transform: scale(1);
+}
+
+@media (max-width: 768px) {
+    
+
+
+
+    .news-list-onwebsite,
+    .news-list-ourlife,
+    .news-list-blog {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .news-item {
+        /* width: 100%; */
+        max-width: 470px;
+        margin: 0 auto;
+    }
+
+    .news-item-title {
+        width: 85%;
+    }
+    
+    .slider-button-left {
+        left: 5px;
+    }
+    
+    .slider-button-right {
+        right: 5px;
+    }
 }
 
 /* style for contact.html */
