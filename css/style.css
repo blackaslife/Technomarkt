@@ -2886,6 +2886,20 @@ legend {
     float: right;
 }
 
+@media (max-width: 768px) {
+    .delivery-section p {
+        padding: 0 20px 0 20px;
+    }
+    .delivery-title {
+        text-align: center;
+    }
+    .delivery-img {
+        float: none;
+        display: block;
+        max-width: 93%;
+    }
+}
+
 /* style for news.html */
 
 .news-title {
