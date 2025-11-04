@@ -1029,14 +1029,17 @@ header {
     box-shadow: 0 0 10px rgba(122,122,122,0.5);
 }
 
-/*focus dont work*/
-/* change css style (opacity ~30%) */
-.brand-icon:focus {
+
+.brands-icon a:focus {
+  outline: none;
+}
+
+.brands-icon:has(a:focus) {
     box-shadow: 0 0 5px rgba(122,122,122,0.5);
 }
-.brand-icon a img:focus {
-    filter: alpha(Opacity=30);
-    opacity: 0.3;
+
+.brands-icon a:focus img {
+  opacity: 0.7;
 }
 
 @media (max-width: 768px) {
@@ -1531,7 +1534,6 @@ footer {
 
 .flex-for-footer-down {
     display: flex;
-    /* delete space-between */
     justify-content: space-between;
 }
 
@@ -1988,7 +1990,6 @@ legend {
 
 .main-navigation {
 
-    /*min-width: 940px;*/
     width: 100%;
     list-style: none;
     margin: 0;
@@ -2058,7 +2059,6 @@ legend {
 
 
 
-/* change margin from 69 to jastify-content: spase-between */
 .site-tel-adres {
     display: flex;
     flex-direction: column;
@@ -2209,9 +2209,6 @@ legend {
 }
 
 
-
-
-
 .catalog-name {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -2281,7 +2278,6 @@ legend {
     color: #000;
 
     width: 620px;
-    /* height: 424px; */
 
     background-color: #fff;
     border-top-width: 7px;
@@ -2323,8 +2319,6 @@ legend {
     width: 940px;
     height: 446px;
     box-shadow: 0 0 16px rgba(35,31,32,0.5);
-    /* background-image: url('img/mapBackground.jpg'); */
-
 }
 
 .modal-add-items {
@@ -2593,10 +2587,6 @@ legend {
     z-index: -1;
 }
 
-/* .modal-login-btn {
-    top: 32vh;
-
-} */
     
 .modal-login form {
     display: flex;
@@ -3019,14 +3009,6 @@ legend {
     overflow: hidden;
 }
 
-
-/* .onwebsite-slider-left,
-.onwebsite-slider-right {
-    position: relative;
-    width: 48%;
-}
- */
-
 .slider-button {
     width: 50px;
     height: 50px;
@@ -3230,7 +3212,6 @@ legend {
     }
     
     .news-item {
-        /* width: 100%; */
         max-width: 470px;
         margin: 0 auto;
     }
