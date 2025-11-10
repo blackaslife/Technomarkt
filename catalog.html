@@ -92,18 +92,18 @@
             <section class="catalog-filter">
                 <h2 class="visually-hidden">Catalog filter</h2>
                 <p class="catalog-filter-name filter-sorting">FILTER:</p>
-                <form action="htttps://echo.htmlacademy.ru" method="get">
+                <form action="https://echo.htmlacademy.ru" method="get">
                     <fieldset>
                         <legend class="catalog-filter-price">PRICE:</legend>
                         <div class="range-controls">
-                            <div class="range"><div class="scale" style="width: 160px;"></div></div>
+                            <div class="range"><div class="scale" style="width: 180px;"></div></div>
                             <div class="toggle min-toggle"></div>
                             <div class="toggle max-toggle"></div>
                         </div>
                         <div class="price-controls">
-                            <label for=""><input class="range-value" type="text" value="0"></label>
+                            <label for=""><input class="range-value priceMinValue" type="text" value="0"></label>
                             <span>-</span>
-                            <label for=""><input class="range-value" type="text" value="30000"></label>
+                            <label for=""><input class="range-value priceMaxValue" type="text" value="30000"></label>
                         </div>
                     </fieldset>
                     <div class="catalog-filter-dividing"></div>
@@ -316,5 +316,6 @@
         <button class="modal-add-items-btn" type="button">CONTINUE SHOPPING</button>
         <button class="modal-close" type="button">Close</button>
     </section>
+    <script src="js/catalog-range.js"></script>
 </body>
 </html>
