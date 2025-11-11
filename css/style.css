@@ -1681,9 +1681,10 @@ footer {
 }
 
 .catalog-filter-dividing {
-    width: 100%;
+    /* width: 100%; */
     height: 1px;
     background-color: #e5e5e5;
+    margin: 25px 0;
 }
 
 form fieldset:nth-child(1) {
@@ -1717,47 +1718,70 @@ legend {
 
 .range-controls {
     position: relative;
-    width: 180px;
+    width: 100%;
     height: 2px;
-    padding: 39px 20px;
-    margin-bottom: 9px;
+    padding: 39px 0;
+    margin-bottom: 20px;
     border-radius: 2px;
     background-color: #f7f3ec;
 }
 
 .range {
+    position: relative;
     width: 100%;
     height: 2px;
     background-color: #e2e4e3;
 }
 
 .scale {
+    position: absolute;
     height: 100%;
     background-color: #00ca74;
+    transition: all 0.1s ease;
 }
 
 .toggle {
-    width: 4px;
-    height: 4px;
-    background-color: #ababab;
-    cursor: pointer;
+
+    /* background-color: #ababab; */
+    /* border: 8px solid #ffffff; */
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    cursor: grab;
     border-radius: 50%;
-    border: 8px solid #ffffff;
+    border: 2px solid #00ca74;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: box-shadow 0.2s ease;
+    z-index: 2;
 }
 
-.min-toggle {
+.toggle:hover,
+.toggle:focus {
+    box-shadow: 0 0 0 4px rgba(0, 202, 116, 0.2);
+    outline: none;
+}
+
+.toggle:active {
+    cursor: grabbing;
+    box-shadow: 0 0 0 6px rgba(0, 202, 116, 0.3);
+}
+
+.toggle::after {
+    content: '';
     position: absolute;
-    top: 30px;
-    left: 20px;
+    width: 6px;
+    height: 6px;
+    background-color: #00ca74;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.max-toggle {
-    position: absolute;
-    top: 30px;
-    left: 160px;
-}
 
-.range-value {
+/* .range-value {
     width: 95px;
     height: 38px;
     border: none;
@@ -1766,6 +1790,49 @@ legend {
 
 .price-controls label:nth-last-child(1) {
     float: right;
+} */
+
+/* Price inputs */
+.price-controls {
+    display: flex;
+    width: 185px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.price-controls label {
+    flex: 1;
+    position: relative;
+}
+
+.price-controls label::before {
+    content: '£';
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    pointer-events: none;
+}
+
+.range-value {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #e2e4e3;
+    border-radius: 4px;
+    padding: 0 12px 0 28px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.range-value:focus {
+    outline: none;
+    border-color: #00ca74;
+}
+
+.price-controls span {
+    color: #999;
 }
 
 .filter-brands,

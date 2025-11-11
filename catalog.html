@@ -97,13 +97,12 @@
                         <legend class="catalog-filter-price">PRICE:</legend>
                         <div class="range-controls">
                             <div class="range"><div class="scale" style="width: 180px;"></div></div>
-                            <div class="toggle min-toggle"></div>
-                            <div class="toggle max-toggle"></div>
+                            <div class="toggle min-toggle" role="slider" aria-label="Мінімальна ціна" aria-valuemin="0" aria-valuemax="30000" aria-valuenow="0" tabindex="0"></div>
+                            <div class="toggle max-toggle" role="slider" aria-label="Максимальна ціна" aria-valuemin="0" aria-valuemax="30000" aria-valuenow="30000" tabindex="0"></div>
                         </div>
                         <div class="price-controls">
-                            <label for=""><input class="range-value priceMinValue" type="text" value="0"></label>
-                            <span>-</span>
-                            <label for=""><input class="range-value priceMaxValue" type="text" value="30000"></label>
+                            <label><input class="range-value priceMinValue" type="number" value="0" min="0" max="30000"></label>
+                            <label><input class="range-value priceMaxValue" type="number" value="30000" min="0" max="30000"></label>
                         </div>
                     </fieldset>
                     <div class="catalog-filter-dividing"></div>
