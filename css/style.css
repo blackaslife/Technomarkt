@@ -1795,7 +1795,7 @@ legend {
 /* Price inputs */
 .price-controls {
     display: flex;
-    width: 185px;
+    width: 220px;
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
@@ -1818,6 +1818,7 @@ legend {
 
 .range-value {
     width: 100%;
+    box-sizing: border-box;
     height: 38px;
     border: 1px solid #e2e4e3;
     border-radius: 4px;
