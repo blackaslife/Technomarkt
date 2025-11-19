@@ -1,4 +1,3 @@
-
 // Отримуємо всі кнопки та елементи списку
 const buttons = document.querySelectorAll('.services-btn');
 const listItems = document.querySelectorAll('.services-list-item');
