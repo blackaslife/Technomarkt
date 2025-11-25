@@ -154,29 +154,40 @@
         <section class="popular-goods">
             <h2 class="visually-hidden">Popular products</h2>
             <p class="popular-goods-link">POPULAR PRODUCTS:<a href="#">ALL POPULAR PRODUCTS</a></p>
-            <ul class="popular-goods-list">
-                <li class="popular-goods-item"><img src="img/item-1.jpg" alt="BOSCH BFG 9000">
-                    <h3 class="goods-name">Rotary hammer BOSCH <br> BFG 9000</h3>
-                    <p class="old-price">1400 $</p>
-                    <p class="new-price">1300 $</p>
-                </li>
-                <li class="popular-goods-item"><img src="img/item-2.jpg" alt="BOSCH BFG 3000">
-                    <h3 class="goods-name">Rotary hammer BOSCH <br> BFG 3000</h3>
-                    <p class="old-price">600 $</p>
-                    <p class="new-price">550 $</p>
-                </li>
-                <li class="popular-goods-item"><img src="img/item-3.jpg" alt="BOSCH BFG 6000">
-                    <h3 class="goods-name">Rotary hammer BOSCH <br> BFG 6000</h3>
-                    <p class="old-price">900 $</p>
-                    <p class="new-price">800 $</p>
-                </li>
-                <li class="popular-goods-item"><img src="img/item-2.jpg" alt="BOSCH BFG 2000">
-                    <div class="container-img-new"><img class="img-new" src="img/new flag.png" alt="New"></div>
-                    <h3 class="goods-name">Rotary hammer BOSCH <br> BFG 2000</h3>
-                    <p class="old-price empty-price"></p>
-                    <p class="new-price">450 $</p>
-                </li>
-            </ul>
+            <div class="carousel-wrapper">
+                <ul class="popular-goods-list" id="productsList">
+                    <li class="popular-goods-item">
+                        <img src="img/item-1.jpg" alt="BOSCH BFG 9000">
+                        <h3 class="goods-name">Rotary hammer BOSCH <br> BFG 9000</h3>
+                        <p class="old-price">1400 $</p>
+                        <p class="new-price">1300 $</p>
+                    </li>
+                    <li class="popular-goods-item">
+                        <img src="img/item-2.jpg" alt="BOSCH BFG 3000">
+                        <h3 class="goods-name">Rotary hammer BOSCH <br> BFG 3000</h3>
+                        <p class="old-price">600 $</p>
+                        <p class="new-price">550 $</p>
+                    </li>
+                    <li class="popular-goods-item">
+                        <img src="img/item-3.jpg" alt="BOSCH BFG 6000">
+                        <h3 class="goods-name">Rotary hammer BOSCH <br> BFG 6000</h3>
+                        <p class="old-price">900 $</p>
+                        <p class="new-price">800 $</p>
+                    </li>
+                    <li class="popular-goods-item">
+                        <img src="img/item-2.jpg" alt="BOSCH BFG 2000">
+                        <div class="container-img-new"><img class="img-new" src="img/new flag.png" alt="New"></div>
+                        <h3 class="goods-name">Rotary hammer BOSCH <br> BFG 2000</h3>
+                        <p class="old-price empty-price"></p>
+                        <p class="new-price">450 $</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-button carousel-button-prev" id="prevBtn" aria-label="Previous slide"></button>
+                <div class="carousel-dots" id="carouselDots"></div>
+                <button class="carousel-button carousel-button-next" id="nextBtn" aria-label="Next slide"></button>
+            </div>
         </section>
         <section class="popular-brands">
             <h2 class="visually-hidden">Popular brands</h2>

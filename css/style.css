@@ -947,6 +947,113 @@ header {
     cursor: pointer;
 }
 
+/* Carousel controls - hidden on desktop */
+.carousel-controls {
+    display: none;
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .popular-goods-link {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .popular-goods-link a {
+        position: static;
+        margin: 20px auto 0;
+    }
+
+    .carousel-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .popular-goods-list {
+        display: flex;
+        flex-wrap: nowrap;
+        transition: transform 0.3s ease-in-out;
+        gap: 20px;
+    }
+
+    .popular-goods-item {
+        flex: 0 0 calc(50% - 10px);
+        min-width: calc(50% - 10px);
+    }
+
+    .carousel-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .carousel-button {
+        width: 40px;
+        height: 40px;
+        background-color: #ee3643;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s;
+    }
+
+    .carousel-button:hover {
+        background-color: #ca2c37;
+    }
+
+    .carousel-button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    .carousel-button::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+
+    .carousel-button-prev::before {
+        border-width: 6px 10px 6px 0;
+        border-color: transparent #fff transparent transparent;
+        margin-left: -2px;
+    }
+
+    .carousel-button-next::before {
+        border-width: 6px 0 6px 10px;
+        border-color: transparent transparent transparent #fff;
+        margin-right: -2px;
+    }
+
+    .carousel-dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .carousel-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ccc;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        transition: background-color 0.3s;
+    }
+
+    .carousel-dot.active {
+        background-color: #ee3643;
+    }
+}
+
 /*section popular-brands*/
 
 .popular-brands-link {
