@@ -975,7 +975,7 @@ header {
         display: flex;
         flex-wrap: nowrap;
         transition: transform 0.3s ease-in-out;
-        gap: 20px;
+        gap: 10px;
     }
 
     .popular-goods-item {
@@ -988,7 +988,7 @@ header {
         justify-content: center;
         align-items: center;
         gap: 15px;
-        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     .carousel-button {
