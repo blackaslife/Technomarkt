@@ -16,8 +16,8 @@
                 if (window.innerWidth <= 768) {
                     this.createDots();
                     this.updateCarousel();
-                    this.attachEvents();
                 }
+                this.attachEvents();
 
                 window.addEventListener('resize', () => {
                     if (window.innerWidth <= 768) {
